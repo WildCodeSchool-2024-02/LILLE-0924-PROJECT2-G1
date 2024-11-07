@@ -8,6 +8,7 @@ function Navbar() {
       />
       <section className="searchBar">
         <input
+          className="input"
           type="text"
           name="searchBar"
           id="searchBar"
