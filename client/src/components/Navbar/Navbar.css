@@ -16,4 +16,13 @@ img {
 .input {
   margin: 3%;
   width: 70%;
+  font-size: large;
+  background-color: #dacda8;
+  border-style: none;
+}
+
+.Catégorie {
+  background-color: #dacda8;
+  border-style: none;
+  font-size: large;
 }

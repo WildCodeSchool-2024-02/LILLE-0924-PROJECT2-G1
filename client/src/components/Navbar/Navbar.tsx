@@ -16,10 +16,18 @@ function Navbar() {
         />
       </section>
       <div className="button">
-        <button type="button">catégorie</button>
-        <button type="button">catégorie</button>
-        <button type="button">catégorie</button>
-        <button type="button">catégorie</button>
+        <button type="button" className="Catégorie">
+          catégorie
+        </button>
+        <button type="button" className="Catégorie">
+          catégorie
+        </button>
+        <button type="button" className="Catégorie">
+          catégorie
+        </button>
+        <button type="button" className="Catégorie">
+          catégorie
+        </button>
       </div>
     </>
   );
