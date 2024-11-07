@@ -1,10 +1,23 @@
-const developperCrew = [
+interface developperCrewProps {
+  name: {
+    first: string;
+    last: string;
+  };
+  picture: string;
+  link: {
+    linkedin: string;
+    github: string;
+    cv: string;
+  };
+}
+
+const developperCrew: developperCrewProps[] = [
   {
     name: {
       first: "Foubert",
       last: "Antoine",
     },
-    picture: "",
+    picture: "server/public/assets/images/imgProAntoineF.jpeg",
     link: {
       linkedin: "https://www.linkedin.com/in/antoine-foubert-152ba413b/",
       github: "https://github.com/foub404",
@@ -28,11 +41,11 @@ const developperCrew = [
       first: "Lesage",
       last: "Emeric",
     },
-    picture: "",
+    picture: "server/public/assets/images/imgProEmericL.jpeg",
     link: {
       linkedin: "https://www.linkedin.com/in/emericlesage/",
       github: "https://github.com/lesage-emeric",
-      cv: "",
+      cv: "https://cvdesignr.com/p/6720d59f20957",
     },
   },
   {
@@ -52,12 +65,14 @@ const developperCrew = [
 function AboutUs() {
   return (
     <>
-      <img src="developper picture" alt="developper name" />
-      <h1>Name of developper</h1>
+      <img src={developperCrew[0].picture} alt={developperCrew[0].name.last} />
+      <h1>
+        {developperCrew[0].name.last} {developperCrew[0].name.first}
+      </h1>
       <p>Little description of the developper</p>
-      <a href="">LinkedIn</a>
-      <a href="">Github</a>
-      <a href="">CV</a>
+      <a href={developperCrew[0].link.linkedin}>LinkedIn</a>
+      <a href={developperCrew[0].link.github}>Github</a>
+      <a href={developperCrew[0].link.cv}>CV</a>
     </>
   );
 }
