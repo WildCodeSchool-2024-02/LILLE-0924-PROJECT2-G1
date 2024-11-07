@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ButtonVisited.css";
 
 function ButtonVisited() {
   const [click, setClick] = useState(false);
