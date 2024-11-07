@@ -62,7 +62,7 @@
         "sunday": "12:00-15:00, 19:00-22:00"
       },
       "location": {
-        "latitude": 50.6380,
+        "latitude": 50.638,
         "longitude": 3.0623
       }
     },
@@ -128,7 +128,7 @@
         "sunday": "Closed"
       },
       "location": {
-        "latitude": 50.6360,
+        "latitude": 50.636,
         "longitude": 3.0649
       }
     },
@@ -260,7 +260,7 @@
         "sunday": "12:00-15:00"
       },
       "location": {
-        "latitude": 50.6370,
+        "latitude": 50.637,
         "longitude": 3.0614
       }
     },
@@ -283,7 +283,7 @@
       },
       "location": {
         "latitude": 50.6333,
-        "longitude": 3.0590
+        "longitude": 3.0599
       }
     },
     {
@@ -459,7 +459,7 @@
       },
       "location": {
         "latitude": 50.6375,
-        "longitude": 3.0640
+        "longitude": 3.0641
       }
     },
     {
@@ -656,7 +656,7 @@
         "sunday": "Closed"
       },
       "location": {
-        "latitude": 50.6380,
+        "latitude": 50.638,
         "longitude": 3.0581
       }
     },
@@ -678,7 +678,7 @@
         "sunday": "Closed"
       },
       "location": {
-        "latitude": 50.6370,
+        "latitude": 50.6371,
         "longitude": 3.0587
       }
     },
@@ -722,7 +722,7 @@
         "sunday": "Closed"
       },
       "location": {
-        "latitude": 50.6340,
+        "latitude": 50.6341,
         "longitude": 3.0689
       }
     },
