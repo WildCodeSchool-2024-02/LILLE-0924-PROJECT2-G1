@@ -6,7 +6,7 @@ function Navbar() {
         src="/public/images/DALL·E-2024-11-05-11.41.34-A-logo-for-a-restaurant-named-_Flandresto_-with-a-minimalistic-design.png"
         alt="logo"
       />
-      <section className="searchBar">
+      <section className="search-bar">
         <input
           className="input"
           type="text"
@@ -16,16 +16,16 @@ function Navbar() {
         />
       </section>
       <div className="button">
-        <button type="button" className="Catégorie">
+        <button type="button" className="category">
           catégorie
         </button>
-        <button type="button" className="Catégorie">
+        <button type="button" className="category">
           catégorie
         </button>
-        <button type="button" className="Catégorie">
+        <button type="button" className="category">
           catégorie
         </button>
-        <button type="button" className="Catégorie">
+        <button type="button" className="category">
           catégorie
         </button>
       </div>
