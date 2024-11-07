@@ -7,7 +7,7 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
-router.get("/restaurant", (req, res) => {
+router.get("/restaurants", (req, res) => {
   res.send(data);
 });
 
