@@ -1,17 +1,18 @@
 import { useState } from "react";
-import "./US-Favorite-Card.css";
+import "./FavoriteArticle.css";
 
-function FavoriteCard() {
+function FavoriteArticle() {
   const [isFavorited, setIsFavorited] = useState(false);
 
   const toggleFavorite = () => {
     setIsFavorited(!isFavorited);
   };
+
   return (
-    <button type="button" onClick={toggleFavorite} className="favorite-card">
+    <button type="button" onClick={toggleFavorite} className="favoriteArticle">
       {isFavorited ? "❤" : "♡"}
     </button>
   );
 }
 
-export default FavoriteCard;
+export default FavoriteArticle;
