@@ -1,20 +1,6 @@
 function Article() {
   return (
     <>
-      <header>
-        <img
-          src="/public/images/DALL·E-2024-11-05-11.41.34-A-logo-for-a-restaurant-named-_Flandresto_-with-a-minimalistic-design.png"
-          alt="logo"
-        />
-        <section>
-          <input
-            type="text"
-            name="searchBar"
-            id="searchBar"
-            placeholder="Recherche"
-          />
-        </section>
-      </header>
       <main>
         <section>
           <img
