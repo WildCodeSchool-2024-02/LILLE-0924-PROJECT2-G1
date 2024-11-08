@@ -1,0 +1,6 @@
+footer {
+  background: #dacda8;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
