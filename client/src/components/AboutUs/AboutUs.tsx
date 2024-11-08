@@ -9,6 +9,7 @@ interface developperCrewProps {
     github: string;
     cv: string;
   };
+  description: string;
 }
 
 const developperCrew: developperCrewProps[] = [
@@ -23,6 +24,7 @@ const developperCrew: developperCrewProps[] = [
       github: "https://github.com/foub404",
       cv: "",
     },
+    description: "",
   },
   {
     name: {
@@ -35,6 +37,7 @@ const developperCrew: developperCrewProps[] = [
       github: "https://github.com/JuIDO0804",
       cv: "",
     },
+    description: "",
   },
   {
     name: {
@@ -47,6 +50,8 @@ const developperCrew: developperCrewProps[] = [
       github: "https://github.com/lesage-emeric",
       cv: "https://cvdesignr.com/p/6720d59f20957",
     },
+    description:
+      "Ancien infirmier, je me suis reconvertit dans le développement web pour me rapprocher de ma passion pour l'informatique.",
   },
   {
     name: {
@@ -59,6 +64,7 @@ const developperCrew: developperCrewProps[] = [
       github: "https://github.com/Supremebatmat",
       cv: "",
     },
+    description: "",
   },
 ];
 
