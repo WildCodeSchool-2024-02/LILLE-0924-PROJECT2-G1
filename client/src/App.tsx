@@ -4,15 +4,7 @@ import CardRestaurant from "./components/card restaurant/Card-Restaurant";
 function App() {
   return (
     <>
-      <header />
-
-      <nav className="navbar" />
-
-      <main>
-        <CardRestaurant />
-      </main>
-
-      <footer />
+      <CardRestaurant />
     </>
   );
 }
