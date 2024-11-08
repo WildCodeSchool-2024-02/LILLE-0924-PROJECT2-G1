@@ -811,7 +811,7 @@ const restaurantList = [
 // Fonction qui créé les peites cartes de restaurants visiblent sur la page d'acceuil
 function CardRestaurant() {
   return (
-    <div className="container">
+    <div className="containerRestaurants">
       {restaurantList.map((element) => (
         <div key={element.id} className=" restaurant restaurant-id">
           <img
