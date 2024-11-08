@@ -1,3 +1,5 @@
+import "./CardRestaurant.css";
+// Tableau de restaurants
 const restaurantList = [
   {
     id: 1,
@@ -805,16 +807,29 @@ const restaurantList = [
     },
   },
 ];
-// Fonction qui créé les peites cartes de restaurants visiblent sur la page d'acceuil
 
+// Fonction qui créé les peites cartes de restaurants visiblent sur la page d'acceuil
 function CardRestaurant() {
-  return restaurantList.map((element) => (
-    <div key={element.id} className="restaurant-id">
-      <img src="http://loremflickr.com/640/480/food" alt={element.name} />
-      <h1>{element.name}</h1>
-      <p>Note : {element.rating}/5</p>
+  return (
+    <div className="container">
+      {restaurantList.map((element) => (
+        <div key={element.id} className=" restaurant restaurant-id">
+          <img
+            src="https://picsum.photos/seed/food/400/300"
+            alt={element.name}
+            className="imgRestaurant"
+          />
+          <h1>{element.name}</h1>
+          <p>Note : {element.rating}/5</p>
+        </div>
+      ))}
     </div>
-  ));
+  );
 }
+
+// fetch("https://www.wildcodeschool.com/")
+//   .then((response) => response.text())
+//   .then((data) => console.log(data))
+//   .catch((err) => console.error(err));
 
 export default CardRestaurant;
