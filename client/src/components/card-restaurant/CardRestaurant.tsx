@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./CardRestaurant.css";
 // Tableau de restaurants
 const restaurantList = [
@@ -810,6 +811,11 @@ const restaurantList = [
 
 // Fonction qui créé les peites cartes de restaurants visiblent sur la page d'acceuil
 function CardRestaurant() {
+  const [restaurant, setRestaurant] = useState();
+  fetch("http://localhost:3310/restaurants")
+    .then((response) => response.json())
+    .then((data) => setRestaurant(data));
+
   return (
     <div className="containerRestaurants">
       {restaurantList.map((element) => (

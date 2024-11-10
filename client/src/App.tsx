@@ -5,8 +5,8 @@ import CardRestaurant from "./components/card-restaurant/CardRestaurant";
 function App() {
   return (
     <>
-      <CardRestaurant />
       <Navbar />
+      <CardRestaurant />
     </>
   );
 }
