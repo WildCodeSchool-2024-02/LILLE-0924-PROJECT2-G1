@@ -2,19 +2,7 @@ import "./Article.css";
 function Article() {
   return (
     <>
-      <img
-        className="logo"
-        src="/public/images/DALL·E-2024-11-05-11.41.34-A-logo-for-a-restaurant-named-_Flandresto_-with-a-minimalistic-design.png"
-        alt="logo"
-      />
-      <section className="searchbar-article">
-        <input
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Recherche"
-        />
-      </section>
+     
 
       <section className="image-resto-plat">
         <img
