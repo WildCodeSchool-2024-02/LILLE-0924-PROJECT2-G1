@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./CardRestaurant.css";
 // Tableau de restaurants
 const restaurantList = [
@@ -809,33 +809,61 @@ const restaurantList = [
   },
 ];
 
-// Fonction qui créé les peites cartes de restaurants visiblent sur la page d'acceuil
+// Fonction qui créé les petites cartes de restaurants visibles sur la page d'accueil
 function CardRestaurant() {
-  // const [restaurant, setRestaurant] = useState();
-  // fetch("http://localhost:3310/restaurants")
-  //   .then((response) => response.json())
-  //   .then((data) => setRestaurant(data));
+  const [selectedCuisine, setSelectedCuisine] = useState("Toutes");
+
+  const handleCuisineChange = (event) => {
+    setSelectedCuisine(event.target.value);
+  };
+
+  // Filtrage des restaurants en fonction des filtres sélectionnés
+  const filteredRestaurants = selectedCuisine === "Toutes"
+    ? restaurantList
+    : restaurantList.filter((restaurant) => restaurant.cuisine === selectedCuisine);
 
   return (
-    <div className="containerRestaurants">
-      {restaurantList.map((element) => (
-        <div key={element.id} className=" restaurant restaurant-id">
-          <img
-            src="https://picsum.photos/seed/food/400/300"
-            alt={element.name}
-            className="imgRestaurant"
-          />
-          <h1>{element.name}</h1>
-          <p>Note : {element.rating}/5</p>
-        </div>
-      ))}
+    <div>
+      <div className="filter-container">
+        <label htmlFor="cuisine">Filtrer par cuisine : </label>
+        <select id="cuisine" value={selectedCuisine} onChange={handleCuisineChange}>
+          <option value="Toutes">Toutes</option>
+          <option value="Française">Française</option>
+          <option value="Japonaise">Japonaise</option>
+          <option value="Italienne">Italienne</option>
+          <option value="Mexicaine">Mexicaine</option>
+          <option value="Café">Café</option>
+          <option value="Méditerranéenne">Méditerranéenne</option>
+          <option value="Bretonne">Bretonne</option>
+          <option value="Végétarienne">Végétarienne</option>
+          <option value="Indienne">Indienne</option>
+          <option value="Américaine">Américaine</option>
+          <option value="Végétalien">Végétalien</option>
+          <option value="Espagnole">Espagnole</option>
+          <option value="Vietnamienne">Vietnamienne</option>
+          <option value="Argentine">Argentine</option>
+          <option value="Marocaine">Marocaine</option>
+          <option value="Tex-Mex">Tex-Mex</option>
+          <option value="Asiatique">Asiatique</option>
+          <option value="Cuisine du Monde">Cuisine du Monde</option>
+        </select>
+      </div>
+      <div className="containerRestaurants">
+        {filteredRestaurants.map((element) => (
+          <div key={element.id} className="restaurant restaurant-id">
+            <img
+              src="https://picsum.photos/seed/food/400/300"
+              alt={element.name}
+              className="imgRestaurant"
+            />
+            <h1>{element.name}</h1>
+            <p>{element.cuisine}</p>
+            <p>Note : {element.rating}/5</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
-
-// fetch("https://www.wildcodeschool.com/")
-//   .then((response) => response.text())
-//   .then((data) => console.log(data))
-//   .catch((err) => console.error(err));
 
 export default CardRestaurant;
