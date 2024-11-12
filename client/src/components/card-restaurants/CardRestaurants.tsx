@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import "./CardRestaurant.css";
+import "./CardRestaurants.css";
+
 interface restaurantProps {
   id: number;
   name: string;
@@ -30,8 +31,7 @@ interface restaurantProps {
   };
 }
 
-// Fonction qui créé les petites cartes de restaurants visiblent sur la page d'acceuil
-function CardRestaurant() {
+function CardRestaurants() {
   const [restaurantsList, setRestaurantsList] = useState<restaurantProps[]>([]);
 
   useEffect(() => {
@@ -47,11 +47,7 @@ function CardRestaurant() {
     <div className="containerRestaurants">
       {restaurantsList?.map((element) => (
         <div key={element.id} className=" restaurant restaurant-id">
-          <img
-            src={element.picture.card}
-            alt={element.name}
-            className="imgRestaurant"
-          />
+          <img src="" alt={element.name} className="imgRestaurant" />
           <h1>{element.name}</h1>
           <p>Note : {element.rating}/5</p>
         </div>
@@ -60,4 +56,4 @@ function CardRestaurant() {
   );
 }
 
-export default CardRestaurant;
+export default CardRestaurants;
