@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./CardRestaurant.css";
-
 interface restaurantProps {
   id: number;
   name: string;
