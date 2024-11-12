@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 interface restaurantProps {
   id: number;
   name: string;

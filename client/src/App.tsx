@@ -1,7 +1,12 @@
-import Searchbar from "./components/US-Searchbar/SearchBar";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  return <Searchbar />;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
