@@ -826,6 +826,7 @@ function CardRestaurant() {
             className="imgRestaurant"
           />
           <h1>{element.name}</h1>
+          <p>Cuisine : {element.cuisine}</p>
           <p>Note : {element.rating}/5</p>
         </div>
       ))}
