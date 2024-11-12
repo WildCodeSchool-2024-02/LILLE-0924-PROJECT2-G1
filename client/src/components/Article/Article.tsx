@@ -2,18 +2,6 @@ import "./Article.css";
 function Article() {
   return (
     <>
-      <section className="image-resto-plat">
-        <img
-          className="img-plat"
-          src="/public/images/plat.png"
-          alt="photo-plat"
-        />
-        <img
-          className="img-resto"
-          src="/public/images/resto.png"
-          alt="photo-restau"
-        />
-      </section>
 
       <div className="reservation">
         <button type="button">réservation</button>
