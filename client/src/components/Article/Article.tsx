@@ -2,8 +2,6 @@ import "./Article.css";
 function Article() {
   return (
     <>
-     
-
       <section className="image-resto-plat">
         <img
           className="img-plat"
