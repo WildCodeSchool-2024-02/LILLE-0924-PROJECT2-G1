@@ -1,9 +1,10 @@
+import "./Réservation.css"
 function Réservation() {
   return (
     <>
       <h1>Formulaire de réservation</h1>
 
-      <h2>Saisie des informations</h2>
+      <h2>Saisie des informations :</h2>
       <p>
         <strong>Nom complet :</strong>
         <input
@@ -37,7 +38,7 @@ function Réservation() {
         />
       </p>
 
-      <h2>Détails de la réservation</h2>
+      <h2>Détails de la réservation :</h2>
 
       <p>
         <strong>Date et heure : </strong>
@@ -62,7 +63,8 @@ function Réservation() {
           max="100"
         />
       </p>
-      <div>
+
+      <div className="button"> 
         <button type="button">Confirmer</button>
         <button type="button">Annuler</button>
       </div>
