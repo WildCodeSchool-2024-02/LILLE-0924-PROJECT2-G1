@@ -1,12 +1,13 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import CardRestaurant from "./components/card-restaurant/CardRestaurant";
+import Article from "./components/Article/Article";
+import CardRestaurants from "./components/card-restaurants/CardRestaurants";
 
 function App() {
   return (
     <>
       <Navbar />
-      <CardRestaurant />
+      <CardRestaurants />
     </>
   );
 }
