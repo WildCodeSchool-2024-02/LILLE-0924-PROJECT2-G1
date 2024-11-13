@@ -7,8 +7,6 @@
 .input {
   width: 90%;
   text-align: center;
-  /* box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    5px 5px 15px 6px rgba(181, 182, 130, 0); */
   border: 0;
   background-color: #b5b682;
   align-items: center;
@@ -28,8 +26,6 @@
   text-align: left;
 }
 .buttonrefresh {
-  /* box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-    5px 5px 15px 6px rgba(218, 205, 168, 0); */
   background-color: #b5b682;
-  border:0;
+  border: 0;
 }

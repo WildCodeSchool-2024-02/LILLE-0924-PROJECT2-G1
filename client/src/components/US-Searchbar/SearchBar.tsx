@@ -61,7 +61,7 @@ function Searchbar() {
   return (
     <>
       <form className="searchbar" onSubmit={handleSubmit}>
-        {/* <label htmlFor="character">Où Manger ?</label> */}
+
         <input
           id="character"
           name="character"
@@ -81,7 +81,6 @@ function Searchbar() {
         >
           ❌
         </button>
-        {/* <button type="submit">Mangeaillons</button> */}
       </form>
       {restaurant && filteredData.length > 0 && (
         <ul className="liste">
