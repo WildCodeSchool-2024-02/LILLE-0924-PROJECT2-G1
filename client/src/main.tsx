@@ -20,18 +20,27 @@ import App from "./App";
 // Create router configuration with routes
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
-  { 
+  {
     element: <App />,
+    loader: () => {
+      const result = fetch("http://localhost:3000/api/restaurants")
+        .then((res) => res.json())
+        .then((restaurantsListFromApi) => {
+          return restaurantsListFromApi;
+        });
+      return result;
+      console.log(result);
+    },
     children: [
       {
         path: "/",
         element: <Home />,
       },
-    {
-      path: "/about",
-      element: <About />,
-    }
-    ]
+      {
+        path: "/about",
+        element: <About />,
+      },
+    ],
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);

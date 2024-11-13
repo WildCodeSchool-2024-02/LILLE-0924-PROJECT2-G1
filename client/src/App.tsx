@@ -1,10 +1,12 @@
 import "./App.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import CardRestaurants from "./components/card-restaurants/CardRestaurants";
 import Home from "./pages/Home";
 
 function App() {
+  const restaurants = useLoaderData();
+  console.log("restaurants" , restaurants);
   return (
     <>
       <nav>
