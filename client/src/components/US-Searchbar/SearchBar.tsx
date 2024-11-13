@@ -1,5 +1,6 @@
 import { useState } from "react";
 import restaurantList from "../../../public/data.json";
+import "./Searchbar.css";
 
 interface restaurantProps {
   id: number;
@@ -60,7 +61,7 @@ function Searchbar() {
   return (
     <>
       <form className="searchbar" onSubmit={handleSubmit}>
-        <label htmlFor="character">Où Manger ?</label>
+        {/* <label htmlFor="character">Où Manger ?</label> */}
         <input
           id="character"
           name="character"
@@ -68,35 +69,38 @@ function Searchbar() {
           value={restaurant}
           onChange={handleChange}
           placeholder="Nom du restaurant ou type de cuisine"
-          style={{ width: "80%", textAlign: "center" }}
+          className="input"
         />
         <button
-          style={{ backgroundColor: "transparent", border: "0" }}
+          className="buttonrefresh"
           type="button"
           onClick={() => {
             setRestaurant("");
             setSelectedRestaurant(null);
           }}
         >
-          X
+          ❌
         </button>
         {/* <button type="submit">Mangeaillons</button> */}
       </form>
-      <ul>
-        {filteredData.map((item: restaurantProps) => (
-          <li
-            key={item.id}
-            onClick={() => handleSelectRestaurant(item)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                handleSelectRestaurant(item);
-              }
-            }}
-          >
-            {item.name} | Type de cuisine : {item.cuisine}
-          </li>
-        ))}
-      </ul>
+      {restaurant && filteredData.length > 0 && (
+        <ul className="liste">
+          {filteredData.map((item: restaurantProps) => (
+            <li
+              key={item.id}
+              onClick={() => handleSelectRestaurant(item)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  handleSelectRestaurant(item);
+                }
+              }}
+              className="elementdeliste"
+            >
+              {item.name} | Type de cuisine : {item.cuisine}
+            </li>
+          ))}
+        </ul>
+      )}
 
       {selectedRestaurant && (
         <div>
