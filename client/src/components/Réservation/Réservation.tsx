@@ -12,7 +12,7 @@ function Réservation() {
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherche"
+          placeholder="Pierre Dupont"
         />
       </p>
 
@@ -23,7 +23,7 @@ function Réservation() {
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherche"
+          placeholder="pierredupont@gmail.com"
         />
       </p>
 
@@ -34,7 +34,7 @@ function Réservation() {
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherche"
+          placeholder="0612345678"
         />
       </p>
 
