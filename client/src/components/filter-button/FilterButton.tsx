@@ -29,12 +29,11 @@ function filterButton() {
           <option value="Végétarienne">Végétarienne</option>
           <option value="Indienne">Indienne</option>
           <option value="Américaine">Américaine</option>
-          <option value="Végétalien">Végétalien</option>
+          <option value="Végétalienne">Végétalien</option>
           <option value="Espagnole">Espagnole</option>
           <option value="Vietnamienne">Vietnamienne</option>
           <option value="Argentine">Argentine</option>
           <option value="Marocaine">Marocaine</option>
-          <option value="Tex-Mex">Tex-Mex</option>
           <option value="Asiatique">Asiatique</option>
           <option value="Cuisine du Monde">Cuisine du Monde</option>
         </select>
