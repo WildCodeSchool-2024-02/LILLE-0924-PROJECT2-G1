@@ -61,7 +61,6 @@ function Searchbar() {
   return (
     <>
       <form className="searchbar" onSubmit={handleSubmit}>
-
         <input
           id="character"
           name="character"
