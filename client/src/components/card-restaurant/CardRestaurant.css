@@ -1,0 +1,14 @@
+.containerRestaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.restaurant {
+  margin: 1%;
+  width: 20%;
+}
+
+.imgRestaurant {
+  width: 100%;
+}
