@@ -11,5 +11,4 @@ router.get("/restaurants", (req, res) => {
   res.send(data);
 });
 
-
 export default router;

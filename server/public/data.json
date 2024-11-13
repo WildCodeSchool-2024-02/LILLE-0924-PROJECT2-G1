@@ -17,6 +17,17 @@
         "saturday": "12:00-15:00, 19:00-23:30",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "La Table de Lille : Une Tradition Française",
+        "description": "Au cœur de Lille, La Table de Lille est un restaurant emblématique ouvert en 1947 par Émile Dupont et son épouse Marie. Leur mission : offrir le meilleur de la cuisine française traditionnelle dans une ambiance conviviale.",
+        "highlights": [
+          "Réputé pour ses classiques intemporels comme le coq au vin, la sole meunière et la tarte Tatin",
+          "Le restaurant attire les gourmets de toute la région",
+          "Décor chaleureux mêlant briques rouges et boiseries anciennes",
+          "Chaque plat raconte l'histoire d'un savoir-faire culinaire transmis de génération en génération"
+        ]
+      },
       "location": {
         "latitude": 50.6293,
         "longitude": 3.0573
@@ -57,6 +68,17 @@
         "friday": "11:30-15:00, 18:00-23:00",
         "saturday": "11:30-15:00, 18:00-23:00",
         "sunday": "Closed"
+      },
+
+      "history": {
+        "title": "Sushi Zen Lille : L'Art de la Cuisine Japonaise",
+        "description": "Sushi Zen Lille, ouvert en 2012, est un restaurant japonais de renom situé dans le centre-ville de Lille. Spécialisé dans les sushis, sashimis et autres spécialités japonaises, il propose une expérience culinaire authentique dans une ambiance apaisante et moderne.",
+        "highlights": [
+          "Des sushis préparés avec des poissons frais et de qualité supérieure",
+          "Un cadre zen et épuré inspiré de la culture japonaise traditionnelle",
+          "Des plats créatifs et variés, tels que les rolls et le sashimi",
+          "Un service rapide et attentionné, pour une expérience gastronomique unique"
+        ]
       },
       "location": {
         "latitude": 50.6324,
@@ -99,6 +121,17 @@
         "saturday": "12:00-15:00, 19:00-23:30",
         "sunday": "12:00-15:00, 19:00-22:00"
       },
+
+      "history": {
+        "title": "Trattoria Bella Napoli : Un Voyage Culinaire en Italie",
+        "description": "Trattoria Bella Napoli est un restaurant italien situé au cœur de Lille, offrant une cuisine authentique inspirée des traditions de Naples. Depuis son ouverture en 2015, il est devenu un lieu incontournable pour les amateurs de pâtes fraîches, pizzas artisanales et spécialités italiennes.",
+        "highlights": [
+          "Des pizzas artisanales cuites au feu de bois, garnies d'ingrédients frais et savoureux",
+          "Des pâtes maison préparées selon des recettes traditionnelles napolitaines",
+          "Un cadre chaleureux et convivial, évoquant l'Italie avec ses décorations typiques",
+          "Un accueil familial et un service attentionné, offrant une expérience culinaire authentique"
+        ]
+      },
       "location": {
         "latitude": 50.638,
         "longitude": 3.0623
@@ -139,6 +172,17 @@
         "friday": "11:00-00:00",
         "saturday": "11:00-00:00",
         "sunday": "Closed"
+      },
+
+      "history": {
+        "title": "El Tacos Loco : L'Explosion de Saveurs Tex-Mex",
+        "description": "El Tacos Loco, fondé en 2015, est un restaurant qui a redéfini le taco à la française. Spécialisé dans les tacos XXL inspirés de la cuisine tex-mex, il offre une expérience culinaire épicée, gourmande et entièrement personnalisable. Le restaurant connaît rapidement un succès grâce à son concept unique et son ambiance décontractée.",
+        "highlights": [
+          "Des tacos XXL avec une variété de garnitures allant du bœuf épicé au poulet, poisson, et végétarien",
+          "Une offre de sauces maison variées, du doux au très épicé, pour accompagner chaque taco",
+          "Un concept rapide et sur mesure où chaque client peut personnaliser son plat",
+          "Une atmosphère festive et accueillante, parfaite pour des repas entre amis ou en famille"
+        ]
       },
       "location": {
         "latitude": 50.6231,
@@ -181,6 +225,17 @@
         "saturday": "08:00-20:00",
         "sunday": "08:00-18:00"
       },
+      "history": {
+        "title": "Café Délice : Une Escapade Gourmande au Coeur de la Ville",
+        "description": "Café Délice, ouvert en 2010, est un restaurant cosy et chaleureux situé au centre-ville. Spécialisé dans les plats français traditionnels et les pâtisseries maison, il est devenu un lieu de rendez-vous incontournable pour les amateurs de bonne cuisine et de moments conviviaux.",
+        "highlights": [
+          "Des plats français traditionnels, avec une attention particulière à la qualité des ingrédients",
+          "Des pâtisseries maison, allant des éclairs au chocolat aux tartes aux fruits de saison",
+          "Un cadre intime et accueillant, parfait pour un déjeuner entre amis ou un dîner en famille",
+          "Un service soigné et une ambiance détendue, créant une expérience culinaire agréable et mémorable"
+        ]
+      },
+
       "location": {
         "latitude": 50.6366,
         "longitude": 3.0637
@@ -222,6 +277,17 @@
         "saturday": "12:00-15:00, 19:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "Bistro Provençal : Une Invitation au Voyage Culinaire en Provence",
+        "description": "Bistro Provençal, fondé en 2012, est un restaurant qui transporte ses convives au cœur de la région Provence. Avec une carte inspirée par les saveurs méditerranéennes, il propose des plats traditionnels préparés à base d'ingrédients frais et locaux, dans une ambiance authentique et conviviale.",
+        "highlights": [
+          "Des plats provençaux classiques, comme la bouillabaisse, la ratatouille et l'agneau de Provence",
+          "Un cadre chaleureux, décoré aux couleurs du sud, avec une terrasse ensoleillée",
+          "Des produits locaux et de saison, provenant directement des producteurs de la région",
+          "Un service attentionné et une atmosphère détendue, pour une expérience culinaire provençale authentique"
+        ]
+      },
+
       "location": {
         "latitude": 50.636,
         "longitude": 3.0649
@@ -246,6 +312,7 @@
         }
       ]
     },
+
     {
       "id": 7,
       "name": "La Crêpe Gourmande",
@@ -263,6 +330,17 @@
         "saturday": "10:00-23:00",
         "sunday": "10:00-21:00"
       },
+      "history": {
+        "title": "La Crêpe Gourmande : Un Voyage de Saveurs au Coeur de la Bretagne",
+        "description": "La Crêpe Gourmande, ouvert en 2015, est un restaurant breton qui propose une large sélection de crêpes salées et sucrées préparées avec des ingrédients frais et de qualité. Situé en plein centre-ville, le restaurant attire les gourmets à la recherche d'une expérience culinaire authentique et savoureuse.",
+        "highlights": [
+          "Des crêpes bretonnes traditionnelles, avec des garnitures variées allant des fruits de mer aux produits locaux",
+          "Une large sélection de crêpes sucrées, avec des options innovantes et des recettes classiques",
+          "Un décor chaleureux et typiquement breton, créant une atmosphère conviviale et décontractée",
+          "Un service accueillant et rapide, parfait pour un repas en famille ou entre amis"
+        ]
+      },
+
       "location": {
         "latitude": 50.6412,
         "longitude": 3.0654
@@ -304,6 +382,17 @@
         "saturday": "12:00-21:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "The Green Bowl : La Cuisine Végétale au Service de la Santé",
+        "description": "The Green Bowl, ouvert en 2018, est un restaurant dédié à la cuisine végétale et saine. Situé au cœur de la ville, il propose des plats créatifs à base d'ingrédients frais et locaux, mettant en avant les bienfaits des super-aliments et des recettes équilibrées pour une alimentation saine et gourmande.",
+        "highlights": [
+          "Des bowls végétariens et véganes, riches en saveurs et en nutriments",
+          "Des ingrédients locaux et bio, sélectionnés pour leur fraîcheur et leur qualité",
+          "Une variété de plats adaptés à tous les régimes alimentaires, de l'omnivore au végane",
+          "Un cadre moderne et épuré, avec une ambiance détendue et accueillante"
+        ]
+      },
+
       "location": {
         "latitude": 50.6343,
         "longitude": 3.0576
@@ -344,6 +433,16 @@
         "friday": "12:00-15:00, 18:00-23:00",
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "12:00-15:00, 18:00-22:00"
+      },
+      "history": {
+        "title": "Spice of India : Un Voyage Culinaire au Coeur de l'Inde",
+        "description": "Spice of India, ouvert en 2014, est un restaurant indien situé en plein centre-ville, offrant une expérience authentique de la cuisine indienne. Avec ses plats épicés et parfumés, le restaurant propose une variété de currys, biryanis et spécialités indiennes préparés avec des épices fraîches et des ingrédients de qualité.",
+        "highlights": [
+          "Des plats traditionnels indiens, comme le butter chicken, le curry d'agneau et le biryani",
+          "Une utilisation généreuse d'épices fraîches et de produits locaux pour des saveurs riches et authentiques",
+          "Un décor coloré et chaleureux, inspiré de la culture indienne",
+          "Un service attentif et un cadre convivial, idéal pour découvrir les saveurs de l'Inde en groupe ou en famille"
+        ]
       },
       "location": {
         "latitude": 50.6309,
@@ -386,6 +485,17 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "BBQ Grill House : L'Art du Barbecue à Son Apogée",
+        "description": "BBQ Grill House, ouvert en 2016, est un restaurant spécialisé dans les grillades et les plats cuits au barbecue. Situé dans un cadre convivial, il offre une large sélection de viandes, poissons et légumes grillés, préparés avec des marinades maison et cuits à la perfection sur un grill. Le restaurant est un lieu de rencontre idéal pour les amoureux de la cuisine barbecue.",
+        "highlights": [
+          "Des viandes et poissons de qualité, cuits au barbecue pour une saveur incomparable",
+          "Des marinades maison et des sauces maison, créant des goûts uniques",
+          "Un cadre chaleureux avec une ambiance décontractée, parfaite pour des repas entre amis ou en famille",
+          "Un menu varié incluant des options pour les carnivores et les végétariens, avec des accompagnements savoureux"
+        ]
+      },
+
       "location": {
         "latitude": 50.6258,
         "longitude": 3.0652
@@ -427,6 +537,17 @@
         "saturday": "18:30-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "La Bistronomie : La Cuisine Française Réinventée",
+        "description": "La Bistronomie, ouvert en 2018, est un restaurant qui combine les classiques de la cuisine française avec une approche moderne et créative. Avec un menu qui change régulièrement en fonction des saisons, il propose des plats raffinés et accessibles dans un cadre convivial et élégant, offrant ainsi une expérience culinaire unique.",
+        "highlights": [
+          "Une cuisine française moderne, alliant tradition et innovation",
+          "Des plats raffinés élaborés à partir d'ingrédients frais et de saison",
+          "Un cadre chic et décontracté, parfait pour un dîner romantique ou un repas entre amis",
+          "Un service attentionné et une expérience gastronomique accessible à tous"
+        ]
+      },
+
       "location": {
         "latitude": 50.6366,
         "longitude": 3.0631
@@ -468,6 +589,18 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "12:00-15:00"
       },
+
+      "history": {
+        "title": "L'Italien Gourmand : Un Voyage au Coeur de l'Italie",
+        "description": "L'Italien Gourmand, fondé en 2017, est un restaurant qui offre une expérience authentique de la cuisine italienne. Avec un menu inspiré des recettes traditionnelles du sud de l'Italie, il propose des pâtes fraîches, des pizzas cuites au feu de bois et des spécialités régionales, dans une ambiance chaleureuse et conviviale.",
+        "highlights": [
+          "Des pizzas artisanales cuites au feu de bois, avec une pâte fine et des garnitures fraîches",
+          "Des pâtes faites maison, préparées avec des ingrédients authentiques et des sauces savoureuses",
+          "Un décor élégant et familial, évoquant l'atmosphère typique des trattorias italiennes",
+          "Un service amical et rapide, pour une expérience culinaire italienne conviviale et gourmande"
+        ]
+      },
+
       "location": {
         "latitude": 50.637,
         "longitude": 3.0614
@@ -509,6 +642,17 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "Sushido : L'Art du Sushi Authentique",
+        "description": "Sushido, ouvert en 2016, est un restaurant japonais qui met l'accent sur l'authenticité et la qualité. Spécialisé dans les sushis frais et les spécialités japonaises traditionnelles, il offre une expérience culinaire raffinée dans un cadre moderne et épuré. Le restaurant attire les amateurs de sushi en quête de saveurs authentiques et de fraîcheur.",
+        "highlights": [
+          "Des sushis préparés à la main avec des poissons frais et de qualité supérieure",
+          "Une sélection de plats japonais traditionnels, dont des sashimis, makis et tempuras",
+          "Un cadre moderne et minimaliste, inspiré par la culture japonaise",
+          "Un service rapide et soigné, avec une attention particulière à chaque détail"
+        ]
+      },
+
       "location": {
         "latitude": 50.6333,
         "longitude": 3.0599
@@ -550,6 +694,17 @@
         "saturday": "12:00-15:00, 18:00-22:30",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "Le Vegan Gourmet : L'Excellence de la Cuisine Végane",
+        "description": "Le Vegan Gourmet, ouvert en 2019, est un restaurant végétalien qui propose une cuisine raffinée, créative et 100% plant-based. Le restaurant offre une alternative gourmande aux repas traditionnels, avec des plats élaborés à partir d'ingrédients frais et de saison, dans un cadre moderne et chaleureux.",
+        "highlights": [
+          "Des plats végétaliens innovants, alliant saveurs, textures et couleurs",
+          "Des ingrédients frais, locaux et de saison, soigneusement sélectionnés pour garantir la qualité",
+          "Un menu varié et équilibré, adapté aux régimes végétaliens, sans gluten et sans produits raffinés",
+          "Un cadre élégant et accueillant, parfait pour les repas en famille, entre amis ou les repas d'affaires"
+        ]
+      },
+
       "location": {
         "latitude": 50.6342,
         "longitude": 3.0605
@@ -591,6 +746,17 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "12:00-15:00, 18:00-22:00"
       },
+      "history": {
+        "title": "Tapas y Vino : Un Voyage Culinaire Espagnol",
+        "description": "Tapas y Vino, ouvert en 2017, est un restaurant espagnol qui invite ses convives à découvrir l'art de la tapa dans un cadre chaleureux et convivial. Spécialisé dans les tapas authentiques et une sélection de vins espagnols, le restaurant offre une expérience culinaire conviviale, idéale pour les repas partagés entre amis ou en famille.",
+        "highlights": [
+          "Des tapas authentiques, allant des classiques comme les patatas bravas et la tortilla, aux créations originales",
+          "Une carte de vins espagnols soigneusement sélectionnés, pour accompagner parfaitement chaque plat",
+          "Un décor vibrant et accueillant, inspiré de l'Espagne, avec une atmosphère décontractée",
+          "Un service amical et rapide, offrant une expérience culinaire espagnole dans toute sa simplicité et son plaisir"
+        ]
+      },
+
       "location": {
         "latitude": 50.6378,
         "longitude": 3.0619
@@ -632,6 +798,17 @@
         "saturday": "12:00-15:00, 19:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "Le Petit Bouchon : L'Authenticité de la Cuisine Lyonnaise",
+        "description": "Le Petit Bouchon, ouvert en 2015, est un restaurant qui célèbre la tradition de la cuisine lyonnaise. Situé dans une rue pittoresque, il propose des plats typiques tels que l'andouillette, le saucisson brioché et la quenelle, préparés dans le respect des recettes traditionnelles. Avec son ambiance chaleureuse et ses tables en bois, c'est l'endroit idéal pour savourer un repas convivial entre amis ou en famille.",
+        "highlights": [
+          "Des plats lyonnais authentiques, préparés avec des ingrédients de qualité",
+          "Une ambiance conviviale et rustique, rappelant les bouchons traditionnels de Lyon",
+          "Un service chaleureux, offrant une expérience culinaire authentique et généreuse",
+          "Un menu changeant au gré des saisons, mettant en avant les spécialités régionales"
+        ]
+      },
+
       "location": {
         "latitude": 50.6346,
         "longitude": 3.0649
@@ -673,6 +850,17 @@
         "saturday": "11:30-15:00, 18:00-23:00",
         "sunday": "12:00-15:00"
       },
+      "history": {
+        "title": "Bambou Vert : Un Voyage Authentique en Asie",
+        "description": "Bambou Vert, ouvert en 2020, est un restaurant asiatique spécialisé dans les saveurs exotiques d'Asie du Sud-Est. Proposant des plats traditionnels comme les pho, pad thaï, et currys verts, le restaurant met à l'honneur des ingrédients frais, des épices parfumées et des recettes authentiques. Son cadre zen, décoré de bambous et de lanternes, invite à l'évasion le temps d'un repas.",
+        "highlights": [
+          "Des plats emblématiques de la cuisine asiatique, préparés avec des ingrédients authentiques",
+          "Une atmosphère zen avec un décor inspiré par la nature asiatique, idéal pour se détendre",
+          "Des options véganes et sans gluten, pour satisfaire toutes les préférences alimentaires",
+          "Un service chaleureux et attentif, garantissant une expérience culinaire dépaysante"
+        ]
+      },
+
       "location": {
         "latitude": 50.6382,
         "longitude": 3.0603
@@ -714,6 +902,17 @@
         "saturday": "12:00-15:00, 19:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "La Pampa : L'Authenticité des Saveurs Argentines",
+        "description": "La Pampa, ouvert en 2018, est un restaurant argentin spécialisé dans les grillades et les plats typiques de la cuisine sud-américaine. Connu pour ses morceaux de viande cuits à la perfection sur un grill traditionnel, le restaurant offre une expérience authentique dans une ambiance chaleureuse et conviviale, inspirée des terres argentines.",
+        "highlights": [
+          "Des viandes d'exception, importées directement d'Argentine et grillées à la façon traditionnelle",
+          "Un menu mettant en valeur des spécialités argentines telles que l'empanada, le chimichurri et les parrilladas",
+          "Un décor rustique avec des touches de bois et de cuir, rappelant l'atmosphère des steakhouses argentins",
+          "Un service accueillant, idéal pour les amateurs de viande et les repas entre amis"
+        ]
+      },
+
       "location": {
         "latitude": 50.6341,
         "longitude": 3.0667
@@ -755,6 +954,17 @@
         "saturday": "12:00-15:00, 18:30-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "Chez Sushi : L'Art du Sushi Moderne",
+        "description": "Chez Sushi, fondé en 2021, est un restaurant japonais qui revisite les classiques du sushi avec une touche moderne et créative. Le restaurant propose une variété de sushis, makis et sashimis préparés à partir de poissons frais et d'ingrédients de qualité, dans un cadre élégant et contemporain. Chez Sushi est l'endroit idéal pour les amateurs de cuisine japonaise à la recherche de saveurs innovantes.",
+        "highlights": [
+          "Des sushis créatifs fusionnant traditions japonaises et influences modernes",
+          "Des ingrédients frais et sélectionnés avec soin pour une qualité optimale",
+          "Un décor moderne et épuré, offrant une ambiance sophistiquée",
+          "Des options végétariennes et véganes, adaptées à tous les goûts"
+        ]
+      },
+
       "location": {
         "latitude": 50.6323,
         "longitude": 3.0654
@@ -796,6 +1006,17 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "El Mexicano : L'Authenticité des Saveurs Mexicaines",
+        "description": "El Mexicano, ouvert en 2015, est un restaurant vibrant spécialisé dans la cuisine mexicaine authentique. Situé au cœur de la ville, il propose une explosion de saveurs avec des plats emblématiques comme les tacos, enchiladas, et guacamoles faits maison. Avec ses couleurs vives, ses décors traditionnels et son ambiance festive, El Mexicano transporte ses clients directement au Mexique.",
+        "highlights": [
+          "Des tacos et burritos généreusement garnis, préparés avec des ingrédients frais",
+          "Une ambiance colorée et festive, inspirée des traditions mexicaines",
+          "Des margaritas et cocktails maison, parfaits pour accompagner les repas",
+          "Un service chaleureux, idéal pour des repas en famille ou entre amis"
+        ]
+      },
+
       "location": {
         "latitude": 50.6387,
         "longitude": 3.0625
@@ -843,6 +1064,17 @@
         "saturday": "19:00-23:00",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "La Table Méditerranéenne : Un Festin de Saveurs du Sud",
+        "description": "La Table Méditerranéenne, ouvert en 2018, est un restaurant qui célèbre la richesse de la cuisine méditerranéenne. Avec un menu inspiré des traditions culinaires de la Grèce, de l'Italie, du Liban et de l'Espagne, le restaurant propose des plats savoureux tels que le mezzé, les grillades au charbon de bois, et les salades fraîches. Dans un cadre lumineux et chaleureux, il offre une expérience gustative qui évoque les saveurs ensoleillées du bassin méditerranéen.",
+        "highlights": [
+          "Un large choix de mezzés, tapas et antipasti, parfaits pour partager",
+          "Des ingrédients frais, locaux et de saison, avec des saveurs authentiques",
+          "Un décor accueillant et élégant, inspiré des côtes méditerranéennes",
+          "Des options véganes et sans gluten, adaptées à tous les régimes alimentaires"
+        ]
+      },
+
       "location": {
         "latitude": 50.6375,
         "longitude": 3.0641
@@ -896,6 +1128,17 @@
         "saturday": "18:30-22:30",
         "sunday": "Closed"
       },
+      "history": {
+        "title": "Tandoori Palace : Un Voyage au Coeur de l'Inde",
+        "description": "Tandoori Palace, fondé en 2014, est un restaurant indien qui propose une expérience culinaire authentique, riche en saveurs et en épices. Spécialisé dans les plats cuits au tandoor, comme les fameux poulet tandoori et naan, le restaurant offre une large gamme de currys, biryanis, et autres spécialités indiennes. Dans un cadre coloré et chaleureux, Tandoori Palace transporte ses convives au cœur de l'Inde, avec des arômes envoûtants et un service attentionné.",
+        "highlights": [
+          "Des plats traditionnels cuits au four tandoor, pour des saveurs uniques et authentiques",
+          "Un menu varié avec des options végétariennes et véganes, adaptées à tous les goûts",
+          "Un décor vibrant et accueillant, inspiré de la culture indienne",
+          "Un service convivial, parfait pour découvrir les saveurs exotiques en famille ou entre amis"
+        ]
+      },
+
       "location": {
         "latitude": 50.6261,
         "longitude": 3.0608
@@ -950,6 +1193,18 @@
         "saturday": "18:30-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Le Gourmet Thaï : L'Essence des Saveurs Thaïlandaises",
+        "description": "Le Gourmet Thaï, ouvert en 2019, est un restaurant qui met à l'honneur la cuisine traditionnelle thaïlandaise. Avec un menu varié allant du pad thaï aux currys parfumés, chaque plat est préparé avec des ingrédients frais et des épices authentiques. Dans une ambiance chaleureuse et exotique, Le Gourmet Thaï offre une véritable escapade culinaire au cœur de la Thaïlande.",
+        "highlights": [
+          "Des plats thaïlandais emblématiques, comme le pad thaï, le curry vert, et la soupe tom yum",
+          "Des ingrédients frais et des épices importées pour des saveurs authentiques",
+          "Un décor raffiné avec des touches thaïlandaises, créant une atmosphère dépaysante",
+          "Des options végétariennes et sans gluten, adaptées à différents régimes alimentaires"
+        ]
+      },
+
       "location": {
         "latitude": 50.6338,
         "longitude": 3.0682
@@ -991,6 +1246,18 @@
         "saturday": "12:00-15:00, 18:00-22:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "La Petite Crêperie : L'Art de la Crêpe Bretonne",
+        "description": "La Petite Crêperie, fondée en 2016, est un charmant restaurant spécialisé dans les crêpes et galettes bretonnes. Située dans une rue pittoresque, elle propose des recettes authentiques préparées avec des ingrédients frais et locaux. Dans un cadre cosy et rustique, La Petite Crêperie offre une expérience conviviale, parfaite pour savourer aussi bien des crêpes sucrées que des galettes salées.",
+        "highlights": [
+          "Des galettes salées à base de farine de sarrasin, garnies d'ingrédients variés",
+          "Un large choix de crêpes sucrées, avec des options classiques et gourmandes",
+          "Un décor chaleureux, avec des touches bretonnes traditionnelles",
+          "Des options végétariennes et sans gluten, pour satisfaire tous les goûts"
+        ]
+      },
+
       "location": {
         "latitude": 50.6367,
         "longitude": 3.0574
@@ -1032,6 +1299,18 @@
         "saturday": "12:00-15:00, 18:00-22:30",
         "sunday": "12:00-15:00"
       },
+
+      "history": {
+        "title": "Oasis Libanaise : Une Évasion Culinaire au Cœur du Liban",
+        "description": "Oasis Libanaise, ouvert en 2017, est un restaurant qui vous plonge dans l'univers des saveurs libanaises authentiques. Avec des plats comme le houmous, le taboulé, les grillades et les mezzés, chaque repas est une invitation à découvrir la richesse et la diversité de la cuisine libanaise. Dans un décor inspiré des paysages du Liban, Oasis Libanaise offre une expérience culinaire chaleureuse et conviviale.",
+        "highlights": [
+          "Des mezzés variés, des grillades savoureuses et des plats traditionnels libanais",
+          "Des ingrédients frais et authentiques, préparés selon des recettes familiales",
+          "Un décor inspiré des paysages libanais, créant une atmosphère accueillante",
+          "Des options végétariennes et véganes, adaptées à tous les goûts"
+        ]
+      },
+
       "location": {
         "latitude": 50.6335,
         "longitude": 3.0724
@@ -1072,6 +1351,17 @@
         "friday": "12:00-15:00, 18:30-23:00",
         "saturday": "12:00-15:00, 18:30-23:00",
         "sunday": "Closed"
+      },
+
+      "history": {
+        "title": "Bistro de la Place : L'Art du Bistro Français",
+        "description": "Le Bistro de la Place, ouvert en 2012, est un restaurant typiquement français qui offre une expérience culinaire authentique et conviviale. Spécialisé dans les classiques de la cuisine française, comme le confit de canard, le bœuf bourguignon et la crème brûlée, le restaurant allie tradition et modernité. Situé sur une place pittoresque, avec une terrasse animée, c'est l'endroit idéal pour savourer un repas de qualité dans une atmosphère chaleureuse.",
+        "highlights": [
+          "Des plats français traditionnels, cuisinés avec des produits frais et de qualité",
+          "Un décor élégant, mêlant touches modernes et classiques du bistrot parisien",
+          "Une carte de vins soigneusement sélectionnée, parfaite pour accompagner chaque plat",
+          "Un service accueillant, créant une ambiance conviviale pour des repas en famille ou entre amis"
+        ]
       },
       "location": {
         "latitude": 50.6342,
@@ -1120,6 +1410,18 @@
         "saturday": "12:00-15:00, 18:30-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Casa Bella : Un Voyage au Coeur de l'Italie",
+        "description": "Casa Bella, ouvert en 2017, est un restaurant italien qui propose une expérience culinaire authentique inspirée des recettes traditionnelles de l'Italie. Avec un menu varié qui inclut des pizzas artisanales, des pâtes fraîches et des desserts maison comme le tiramisu, le restaurant met en avant des ingrédients de qualité et une préparation soignée. Dans une ambiance chaleureuse et conviviale, Casa Bella est le lieu idéal pour savourer des plats italiens faits maison.",
+        "highlights": [
+          "Des pizzas artisanales cuites au four à bois, garnies d'ingrédients frais",
+          "Des pâtes fraîches faites maison, préparées selon les recettes traditionnelles",
+          "Un décor cosy et accueillant, inspiré des trattorias italiennes",
+          "Des options végétariennes et sans gluten, adaptées à différents régimes alimentaires"
+        ]
+      },
+
       "location": {
         "latitude": 50.6364,
         "longitude": 3.0615
@@ -1167,6 +1469,18 @@
         "saturday": "12:00-15:00, 18:30-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Le Marrakech : Une Escapade au Coeur du Maroc",
+        "description": "Le Marrakech, ouvert en 2015, est un restaurant marocain qui invite ses convives à découvrir les saveurs exotiques et épicées du Maroc. Spécialisé dans les tajines, couscous et grillades, le restaurant offre une expérience culinaire unique avec des plats mijotés aux épices parfumées et des ingrédients frais. Le cadre est un véritable voyage avec ses décors traditionnels marocains et une ambiance chaleureuse, parfaite pour savourer un repas en famille ou entre amis.",
+        "highlights": [
+          "Des tajines et couscous traditionnels, préparés avec des épices authentiques",
+          "Des grillades savoureuses, comme le méchoui et les brochettes, cuites à la perfection",
+          "Un décor inspiré des souks marocains, avec des lanternes et des mosaïques colorées",
+          "Des options végétariennes et sans gluten, pour satisfaire tous les palais"
+        ]
+      },
+
       "location": {
         "latitude": 50.6298,
         "longitude": 3.0573
@@ -1214,6 +1528,18 @@
         "saturday": "19:00-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Chez Pierrot : Un Voyage Culinaire Traditionnel",
+        "description": "Chez Pierrot, ouvert en 2010, est un restaurant traditionnel français qui mise sur la qualité des produits et le respect des recettes classiques. Spécialisé dans les plats typiques comme le bœuf bourguignon, les escargots de Bourgogne et les crêpes, Chez Pierrot offre une expérience authentique dans une ambiance conviviale. Le restaurant, avec son décor raffiné et son service attentionné, est l’endroit parfait pour découvrir ou redécouvrir la cuisine française.",
+        "highlights": [
+          "Des plats classiques de la cuisine française, préparés avec des produits locaux et frais",
+          "Une carte des vins soigneusement sélectionnée, accompagnant parfaitement chaque plat",
+          "Un décor élégant, évoquant le charme des bistrots français traditionnels",
+          "Un service chaleureux et accueillant, idéal pour les repas en famille ou entre amis"
+        ]
+      },
+
       "location": {
         "latitude": 50.6347,
         "longitude": 3.0662
@@ -1261,6 +1587,18 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Taverne Flamande : Une Plongée dans la Tradition du Nord",
+        "description": "La Taverne Flamande, fondée en 2014, est un restaurant qui célèbre les saveurs authentiques du Nord de la France. Spécialisé dans la cuisine flamande, le restaurant propose des plats traditionnels comme la carbonnade flamande, les moules-frites et les potjes aux fromages. Dans un décor rustique et chaleureux, inspiré des tavernes du Nord, La Taverne Flamande invite ses convives à une véritable expérience culinaire en toute convivialité.",
+        "highlights": [
+          "Des plats traditionnels flamands, mijotés avec des produits locaux et de saison",
+          "Des spécialités comme la carbonnade flamande, les moules-frites et les gaufres",
+          "Un décor chaleureux et authentique, inspiré des tavernes traditionnelles du Nord",
+          "Des options végétariennes et adaptées aux régimes spécifiques"
+        ]
+      },
+
       "location": {
         "latitude": 50.638,
         "longitude": 3.0581
@@ -1308,6 +1646,18 @@
         "saturday": "19:00-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "L'Épicerie Gourmande : Le Charme de la Cuisine du Terroir",
+        "description": "L'Épicerie Gourmande, ouverte en 2016, est un restaurant qui met à l'honneur les produits du terroir dans un cadre chaleureux et raffiné. Spécialisée dans la cuisine française traditionnelle, la carte propose des plats faits maison à base de produits frais et locaux, comme le foie gras, le confit de canard et les fromages affinés. Avec son ambiance cosy et son décor inspiré des épiceries fines, L'Épicerie Gourmande invite ses clients à un voyage gustatif au cœur des saveurs de la France.",
+        "highlights": [
+          "Des plats français traditionnels, élaborés à partir de produits frais et de saison",
+          "Une sélection de fromages et de charcuteries fines, accompagnée de vins soigneusement choisis",
+          "Un décor élégant et cosy, évoquant l'atmosphère d'une épicerie de luxe",
+          "Des options végétariennes et des plats adaptés aux régimes alimentaires spécifiques"
+        ]
+      },
+
       "location": {
         "latitude": 50.6371,
         "longitude": 3.0587
@@ -1355,6 +1705,18 @@
         "saturday": "18:00-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "El Cantina : Un Voyage au Coeur du Mexique",
+        "description": "El Cantina, ouvert en 2018, est un restaurant mexicain qui propose une expérience culinaire vibrante, pleine de saveurs et d'épices. Spécialisé dans les tacos, burritos, quesadillas et autres plats traditionnels mexicains, El Cantina offre un large choix de recettes authentiques préparées avec des ingrédients frais. Le restaurant, avec son décor coloré et son ambiance festive, invite ses clients à découvrir la richesse de la cuisine mexicaine dans une atmosphère conviviale et chaleureuse.",
+        "highlights": [
+          "Des tacos, burritos, et quesadillas préparés à partir d'ingrédients frais et authentiques",
+          "Des plats mexicains épicés, avec des options végétariennes et véganes",
+          "Un décor coloré et animé, inspiré des cantinas traditionnelles du Mexique",
+          "Un service convivial, parfait pour un repas entre amis ou en famille"
+        ]
+      },
+
       "location": {
         "latitude": 50.6322,
         "longitude": 3.0712
@@ -1402,6 +1764,18 @@
         "saturday": "12:00-15:00, 18:00-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Noodles & Co : Un Monde de Saveurs Asiatique",
+        "description": "Noodles & Co, ouvert en 2015, est un restaurant qui se spécialise dans les plats de nouilles asiatiques, offrant une fusion de saveurs provenant de toute l'Asie. De la soupe pho vietnamienne aux nouilles sautées thaïlandaises, le restaurant propose un large choix de plats rapides, sains et savoureux. Avec une attention particulière portée sur des ingrédients frais et des recettes authentiques, Noodles & Co invite ses clients à explorer un menu diversifié, parfait pour une pause déjeuner ou un dîner entre amis.",
+        "highlights": [
+          "Des plats de nouilles asiatiques traditionnels, avec des influences vietnamiennes, thaïlandaises et chinoises",
+          "Des options saines et équilibrées, avec des ingrédients frais et des recettes maison",
+          "Un décor moderne et épuré, offrant une ambiance agréable et décontractée",
+          "Des options végétariennes et véganes pour répondre à tous les goûts et régimes alimentaires"
+        ]
+      },
+
       "location": {
         "latitude": 50.6341,
         "longitude": 3.0689
@@ -1449,6 +1823,18 @@
         "saturday": "19:00-23:00",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Le Chariot du Monde : Une Évasion Culinaire Internationale",
+        "description": "Le Chariot du Monde, ouvert en 2019, est un restaurant qui propose un voyage culinaire autour du monde, avec des plats inspirés des cuisines de tous les continents. Chaque plat est une invitation à découvrir des saveurs exotiques et uniques, préparées avec des ingrédients frais et de qualité. Dans une ambiance chaleureuse et cosmopolite, Le Chariot du Monde offre une expérience gastronomique diversifiée, idéale pour ceux qui cherchent à goûter à l'international dans un cadre convivial.",
+        "highlights": [
+          "Une carte internationale avec des plats typiques de différentes régions du monde",
+          "Des ingrédients frais, choisis pour leur qualité et leur authenticité",
+          "Un décor vibrant, reflétant la diversité des cultures du monde",
+          "Des options végétariennes et adaptées à différents régimes alimentaires"
+        ]
+      },
+
       "location": {
         "latitude": 50.6362,
         "longitude": 3.0625
@@ -1496,6 +1882,18 @@
         "saturday": "19:00-22:30",
         "sunday": "Closed"
       },
+
+      "history": {
+        "title": "Veggie Delight : L'Excellence Végétarienne",
+        "description": "Veggie Delight, ouvert en 2018, est un restaurant végétarien qui célèbre la richesse des légumes et des ingrédients frais. Spécialisé dans une cuisine végétarienne inventive et savoureuse, il propose une large variété de plats équilibrés allant des salades fraîches aux plats mijotés, en passant par des burgers végétaliens. Avec un souci constant de qualité et de goût, Veggie Delight offre une alternative gourmande et saine, tout en restant accessible à tous, végétariens ou non.",
+        "highlights": [
+          "Des plats végétariens et véganes faits maison, mettant en avant des produits locaux et de saison",
+          "Des burgers végétaliens, des soupes nourrissantes et des desserts délicieux et sains",
+          "Un décor moderne et lumineux, avec une ambiance accueillante et relaxante",
+          "Des options sans gluten et adaptées aux régimes alimentaires spécifiques"
+        ]
+      },
+
       "location": {
         "latitude": 50.6336,
         "longitude": 3.0654
