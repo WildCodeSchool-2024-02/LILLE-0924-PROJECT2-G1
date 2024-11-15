@@ -1,4 +1,4 @@
-function Réservation() {
+function Reservation() {
   return (
     <>
       <h1>Formulaire de réservation</h1>
@@ -69,4 +69,4 @@ function Réservation() {
     </>
   );
 }
-export default Réservation;
+export default Reservation;
