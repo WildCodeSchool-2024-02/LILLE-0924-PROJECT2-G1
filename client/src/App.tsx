@@ -1,30 +1,25 @@
 import "./App.css";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Reservation from "./components/Reservation/Reservation";
 import CardRestaurant from "./components/card-restaurant/CardRestaurant";
 
-function App() {
-	return (
-		<>
-			<Navbar />
-			<CardRestaurant />
-			<Reservation />
-		</>
-	);
-
-import Carrousel from "./components/Carrousel/Carrousel";
-import Article from "./components/Article/Article";
-import Navbar from "./components/Navbar/Navbar";
-import CardRestaurants from "./components/card-restaurants/CardRestaurants";
-
 
 function App() {
+  const restaurants = useLoaderData();
+
   return (
     <>
-     
-      <Navbar />
-     <Reservation />
-      <CardRestaurants />
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/article">Article</Link>
+      </nav>
+      <main>
+        <Outlet />
+      </main>
+      <footer>
+        <Link to="/about">About</Link>{" "}
+      </footer>
     </>
   );
 }
