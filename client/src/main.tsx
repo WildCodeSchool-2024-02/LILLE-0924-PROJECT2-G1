@@ -4,10 +4,11 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Article from "./components/Article/Article";
+import App from "./App";
 /* ************************************************************************* */
 
 // Import the main app component
-import App from "./App";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -22,15 +23,14 @@ import App from "./App";
 const router = createBrowserRouter([
   {
     element: <App />,
-    loader: () => {
-      const result = fetch("http://localhost:3000/api/restaurants")
-        .then((res) => res.json())
-        .then((restaurantsListFromApi) => {
-          return restaurantsListFromApi;
-        });
-      return result;
-      console.log(result);
-    },
+    // loader: () => {
+    //   const result = fetch("http://localhost:3000/api/restaurants")
+    //     .then((res) => res.json())
+    //     .then((restaurantsListFromApi) => {
+    //       return restaurantsListFromApi;
+    //     });
+    //   return result;
+    // },
     children: [
       {
         path: "/",
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/article",
+        element: <Article />,
       },
     ],
   },

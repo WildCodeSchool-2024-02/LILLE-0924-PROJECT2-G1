@@ -6,16 +6,19 @@ import Home from "./pages/Home";
 
 function App() {
   const restaurants = useLoaderData();
-  console.log("restaurants" , restaurants);
+
   return (
     <>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/article">Article</Link>
       </nav>
       <main>
         <Outlet />
       </main>
+      <footer>
+        <Link to="/about">About</Link>{" "}
+      </footer>
     </>
   );
 }
