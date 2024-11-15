@@ -1,29 +1,27 @@
 import "./App.css";
 import Carrousel from "./components/Carrousel/Carrousel";
+import { Link, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import CardRestaurants from "./components/card-restaurants/CardRestaurants";
+import CardRestaurant from "./components/card-restaurant/CardRestaurant";
 
 
 function App() {
+  const restaurants = useLoaderData();
+
   return (
     <>
-      <Navbar />
+      <nav>
+        <Navbar />
+        <Link to="/">Home</Link>
+        <Link to="/article">Article</Link>
+      </nav>
       <main>
-          <Carrousel />
-          <CardRestaurants />
+        <Outlet />
       </main>
       <footer>
         <p>&copy;</p>
-        <p>
-          About
-          {/* il faudra mettre le composant en lien avec react router */}
-        </p>
-        <p>
-          emoji ?
-          {/* il faudra rajouter un petit emoji de couvert*/}
-        </p>
+        <Link to="/about"><AboutUs /></Link>
       </footer>
-
     </>
   );
 }
