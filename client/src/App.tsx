@@ -1,8 +1,10 @@
 import "./App.css";
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar";
-import Reservation from "./components/Reservation/Reservation";
-import CardRestaurant from "./components/card-restaurant/CardRestaurant";
+import Article from "./components/article/Article";
+import CardRestaurants from "./components/card-restaurants/CardRestaurants";
+import Carrousel from "./components/carrousel/Carrousel";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 
 
 function App() {
@@ -10,18 +12,15 @@ function App() {
 
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/article">Article</Link>
-      </nav>
-      <main>
-        <Outlet />
-      </main>
+      <Navbar />
+      <Carrousel />
+      <CardRestaurants />
+      <Article />
       <footer>
-        <Link to="/about">About</Link>{" "}
+        <p>&copy;</p>
+        <Link to="/about"><AboutUs /></Link>
       </footer>
     </>
   );
 }
-
 export default App;

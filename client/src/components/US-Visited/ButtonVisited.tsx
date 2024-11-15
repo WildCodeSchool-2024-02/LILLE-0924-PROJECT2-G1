@@ -11,7 +11,7 @@ function ButtonVisited() {
   return (
     <>
       <button type="button" onClick={handleClick}>
-        {click ? "🍽" : "❤"}
+        {click ? "✔️" : "🍽"}
       </button>
     </>
   );
