@@ -1,68 +1,79 @@
 .logo {
   width: 15%;
 }
-
 .searchbar-article {
   text-align: center;
   margin-bottom: 3%;
 }
-
-input {
-  margin: 3%;
-  width: 70%;
-  font-size: large;
-  background-color: #dacda8;
-  border-style: none;
-}
-
-.image-resto-plat {
-  display: flex;
-  justify-content: center;
-  gap: 5%;
-}
-
-.img-resto {
-  width: 45%;
-}
-
-.img-plat {
-  width: 45%;
-}
-
 .reservation {
   margin-top: 2%;
   text-align: end;
 }
-
 .reservation button {
   width: 10%;
   padding: 1%;
 }
-
 .button-enr {
   width: 10%;
   padding: 1%;
 }
-
 .button-fav {
   width: 10%;
   padding: 1%;
 }
-
 .info-resto {
   width: 80%;
 }
-
-.avis {
+.review {
   padding: 10%;
   width: 30%;
   text-align: center;
   justify-self: center;
 }
-
 .google-map {
-  padding: 10%;
+  padding: 0;
   width: 30%;
   text-align: center;
   justify-self: center;
+}
+.containerImage {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 80%;
+  margin-left: 10%;
+}
+.imgRestaurant {
+  width: 40%;
+}
+.imgDish {
+  width: 40%;
+}
+.infoRestaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.allButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reviews {
+  width: 80%;
+  padding: 10px;
+}
+.reviews h1 {
+  font-size: 2em;
+}
+.rewiewNameDate {
+  border-top: solid gray 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.google-map img {
+  width: 100%;
 }

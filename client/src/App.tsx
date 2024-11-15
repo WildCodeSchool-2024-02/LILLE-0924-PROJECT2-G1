@@ -1,19 +1,17 @@
 import "./App.css";
-import Carrousel from "./components/Carrousel/Carrousel";
-import Article from "./components/Article/Article";
 import Navbar from "./components/Navbar/Navbar";
+import Article from "./components/article/Article";
 import CardRestaurants from "./components/card-restaurants/CardRestaurants";
-
+import Carrousel from "./components/carrousel/Carrousel";
 
 function App() {
   return (
     <>
-      <ButtonVisited />
       <Navbar />
       <Carrousel />
       <CardRestaurants />
+      <Article />
     </>
   );
 }
-
 export default App;
