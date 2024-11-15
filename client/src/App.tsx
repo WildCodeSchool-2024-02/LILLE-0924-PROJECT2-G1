@@ -1,22 +1,30 @@
 import "./App.css";
+import Carrousel from "./components/Carrousel/Carrousel";
+import Article from "./components/Article/Article";
 import Navbar from "./components/Navbar/Navbar";
+import CardRestaurants from "./components/card-restaurants/CardRestaurants";
+
 
 function App() {
   return (
     <>
       <Navbar />
-      <main />
+      <main>
+          <Carrousel />
+          <CardRestaurants />
+      </main>
       <footer>
         <p>&copy;</p>
         <p>
-          About us
+          About
           {/* il faudra mettre le composant en lien avec react router */}
         </p>
         <p>
           emoji ?
-          {/* je  propose de rajouter un petit emoji de fourchette ou de couvert*/}
+          {/* il faudra rajouter un petit emoji de couvert*/}
         </p>
       </footer>
+
     </>
   );
 }
