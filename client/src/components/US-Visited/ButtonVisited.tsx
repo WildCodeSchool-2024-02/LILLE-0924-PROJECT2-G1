@@ -10,7 +10,7 @@ function ButtonVisited() {
 
   return (
     <>
-      <button type="button" onClick={handleClick}>
+      <button type="button" onClick={handleClick} className="buttonVisited">
         {click ? "✔️" : "🍽"}
       </button>
     </>

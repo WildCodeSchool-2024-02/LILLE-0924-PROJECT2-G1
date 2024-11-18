@@ -3,6 +3,7 @@ import FavoriteArticle from "../favorite-article/FavoriteArticle";
 import "./Article.css";
 import { useState } from "react";
 import { useEffect } from "react";
+
 interface restaurantProps {
   id: number;
   name: string;
@@ -77,7 +78,6 @@ function Article() {
             <h1>Avis google</h1>
             <div className="rewiewNameDate">
               <p>
-                {" "}
                 Écrit par : <strong>{restaurant.reviews.reviewer}</strong>
               </p>
               <p>Le {restaurant.reviews.date}</p>
@@ -93,7 +93,7 @@ function Article() {
             <p>{restaurant.reviews.comment}</p>
             <p>{restaurant.reviews.rating}/5</p>
           </section>
-          <section className="google-map" key={"${restaurant.name}-map"}>
+          <section className="googleMap" key={"${restaurant.name}-map"}>
             <h1>Google map</h1>
             <img
               src="https://img.freepik.com/vecteurs-libre/application-localisation-suivi-coronavirus-concept_23-2148659370.jpg?ga=GA1.1.1387876668.1730892268&semt=ais_hybrid"
