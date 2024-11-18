@@ -1,5 +1,5 @@
-import ButtonVisited from "../US-Visited/ButtonVisited";
 import FavoriteArticle from "../favorite-article/FavoriteArticle";
+import ButtonVisited from "../visited-button/ButtonVisited";
 import "./Article.css";
 import { useState } from "react";
 import { useEffect } from "react";
