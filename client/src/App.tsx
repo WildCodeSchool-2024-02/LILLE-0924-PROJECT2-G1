@@ -8,7 +8,9 @@ import Carrousel from "./components/carrousel/Carrousel";
 function App() {
   return (
     <>
-      <Navbar />
+      <nav>
+        <Navbar />
+      </nav>
       <Carrousel />
       <CardRestaurants />
       <Article />

@@ -1,33 +1,22 @@
+import Searchbar from "../Searchbar/SearchBar";
 import "./Navbar.css";
 function Navbar() {
   return (
     <>
       <img
-        src="/public/images/DALL·E-2024-11-05-11.41.34-A-logo-for-a-restaurant-named-_Flandresto_-with-a-minimalistic-design.png"
-        alt="logo"
+        className="logo"
+        src="./public/images/logo-flandresto.png"
+        alt="Flandresto"
       />
-      <section className="searchBar">
-        <input
-          className="inputSearchBar"
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Recherche"
-        />
-      </section>
-      <div className="button">
-        <button type="button" className="category">
-          catégorie
-        </button>
-        <button type="button" className="category">
-          catégorie
-        </button>
-        <button type="button" className="category">
-          catégorie
-        </button>
-        <button type="button" className="category">
-          catégorie
-        </button>
+      <div className="filter">
+        <section className="searchBar">
+          <Searchbar />
+        </section>
+        <div className="categoryBar">
+          <button type="button" className="category">
+            catégorie
+          </button>
+        </div>
       </div>
     </>
   );
