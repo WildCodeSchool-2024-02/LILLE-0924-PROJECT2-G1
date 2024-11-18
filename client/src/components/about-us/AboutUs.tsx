@@ -24,7 +24,8 @@ const developperCrew: developperCrewProps[] = [
       github: "https://github.com/foub404",
       cv: "",
     },
-    description: "",
+    description:
+      "Après plusieurs années en logistique, j’ai choisi de me reconvertir dans le développement web, attiré par l’innovation et la créativité. J’apprends les technologies modernes tout en appliquant mes compétences en organisation. Motivé, je vise à m’épanouir pleinement dans ce nouveau métier.",
   },
   {
     name: {
