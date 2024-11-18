@@ -1,14 +1,13 @@
 import "./App.css";
-
 import Navbar from "./components/Navbar/Navbar";
-import Article from "./components/article/Article";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Article from "./components/Article/Article";
 import CardRestaurants from "./components/card-restaurants/CardRestaurants";
 import Carrousel from "./components/carrousel/Carrousel";
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function App() {
-  const restaurants = useLoaderData();
 
   return (
     <>
