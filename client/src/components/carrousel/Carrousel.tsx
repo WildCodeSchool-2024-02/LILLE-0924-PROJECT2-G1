@@ -27,7 +27,7 @@ function RandomImages() {
   return (
     <>
       <div className="carousel">
-        <div className="carousel-track">
+        <div className="carouselTrack">
           {images?.map((image: string) => (
             <img src={image} key={image} alt="carousel" />
           ))}

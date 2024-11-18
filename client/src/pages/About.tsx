@@ -1,7 +1,7 @@
-function About () {
-    return ( 
-        <h1>About</h1>
-     );
+import AboutUs from "../components/about-us/AboutUs";
+
+function About() {
+  return <AboutUs />;
 }
 
 export default About;

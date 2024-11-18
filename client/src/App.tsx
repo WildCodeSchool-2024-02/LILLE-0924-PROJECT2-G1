@@ -1,15 +1,12 @@
 import "./App.css";
-
 import Navbar from "./components/Navbar/Navbar";
+import AboutUs from "./components/about-us/AboutUs";
 import Article from "./components/article/Article";
 import CardRestaurants from "./components/card-restaurants/CardRestaurants";
 import Carrousel from "./components/carrousel/Carrousel";
-import { Link, Outlet, useLoaderData } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 function App() {
-  const restaurants = useLoaderData();
-
   return (
     <>
       <Navbar />
@@ -18,7 +15,7 @@ function App() {
       <Article />
       <footer>
         <p>&copy;</p>
-        <Link to="/about"><AboutUs /></Link>
+        <Link to="/about">About</Link>
       </footer>
     </>
   );

@@ -8,7 +8,7 @@ function FavoriteCard() {
     setIsFavorited(!isFavorited);
   };
   return (
-    <button type="button" onClick={toggleFavorite} className="favorite-card">
+    <button type="button" onClick={toggleFavorite} className="favoriteCard">
       {isFavorited ? "❤" : "♡"}
     </button>
   );

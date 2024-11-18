@@ -7,7 +7,7 @@ function Reservation() {
       <p>
         <strong>Nom complet :</strong>
         <input
-          className="input"
+          className="input inputName"
           type="text"
           name="searchBar"
           id="searchBar"
@@ -18,7 +18,7 @@ function Reservation() {
       <p>
         <strong>Adresse e-mail :</strong>
         <input
-          className="input"
+          className="input inputMail"
           type="text"
           name="searchBar"
           id="searchBar"
@@ -29,7 +29,7 @@ function Reservation() {
       <p>
         <strong>Numéro de téléphone :</strong>
         <input
-          className="input"
+          className="input inputTel"
           type="text"
           name="searchBar"
           id="searchBar"
