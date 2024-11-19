@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./CardRestaurants.css";
 import FavoriteCard from "../favorite-card/FavoriteCard";
-
 interface restaurantProps {
   id: number;
   name: string;
@@ -37,16 +36,9 @@ interface restaurantProps {
     date: string;
   };
 }
-function CardRestaurants() {
-  const [restaurantsList, setRestaurantsList] = useState<restaurantProps[]>([]);
-  useEffect(() => {
-    fetch("http://localhost:3310/restaurants")
-      .then((response) => response.json())
-      .then((restaurantsListFromApi) => {
-        return setRestaurantsList(restaurantsListFromApi.restaurants);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+function CardRestaurants({
+  restaurantsList,
+}: { restaurantsList: restaurantProps[] }) {
   return (
     <div className="containerRestaurants">
       {restaurantsList?.map((element) => (
