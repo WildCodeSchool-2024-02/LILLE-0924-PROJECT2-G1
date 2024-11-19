@@ -1,5 +1,4 @@
-import { useState } from "react";
-import restaurantList from "../../../public/data.json";
+import { useEffect, useState } from "react";
 import "./Searchbar.css";
 
 interface restaurantProps {
@@ -19,18 +18,39 @@ interface restaurantProps {
     saturday?: string | undefined;
     sunday?: string | undefined;
   };
-  location?:
-    | {
-        latitude?: number;
-        longitude?: number;
-      }
-    | undefined;
+  location?: {
+    latitude?: number;
+    longitude?: number;
+  };
+  pictures: {
+    card: string;
+    restaurant: string;
+    dish: string;
+  };
+  reviews: {
+    reviewer: string;
+    rating: number;
+    comment: string;
+    date: string;
+  }[];
 }
 
 function Searchbar() {
   const [restaurant, setRestaurant] = useState("");
+  const [restaurantList, setRestaurantsList] = useState<restaurantProps[]>([]);
   const [selectedRestaurant, setSelectedRestaurant] =
     useState<restaurantProps | null>(null);
+
+  useEffect(() => {
+    fetch("http://localhost:3310/restaurants")
+      .then((response) => response.json())
+      .then((data) => {
+        setRestaurantsList(data.restaurants);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setRestaurant(event.target.value);
@@ -46,13 +66,11 @@ function Searchbar() {
   };
 
   const handleSelectRestaurant = (restaurant: restaurantProps) => {
-    if (!selectedRestaurant) {
-      setSelectedRestaurant(restaurant);
-      setRestaurant(restaurant.name);
-    }
+    setSelectedRestaurant(restaurant);
+    setRestaurant(restaurant.name);
   };
 
-  const filteredData = restaurantList.restaurants.filter(
+  const filteredData = restaurantList.filter(
     (item: restaurantProps) =>
       item.name.toLowerCase().includes(restaurant.toLowerCase()) ||
       item.cuisine.toLowerCase().includes(restaurant.toLowerCase()),
@@ -81,7 +99,7 @@ function Searchbar() {
           ❌
         </button>
       </form>
-      {restaurant && filteredData.length > 0 && (
+      {restaurantList.length > 0 && restaurant && filteredData.length > 0 && (
         <ul className="liste">
           {filteredData.map((item: restaurantProps) => (
             <li
