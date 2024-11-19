@@ -1,19 +1,16 @@
 import "./App.css";
 import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Searchbar from "./components/Searchbar/SearchBar";
-import Article from "./components/article/Article";
-import CardRestaurants from "./components/card-restaurants/CardRestaurants";
 import Carrousel from "./components/carrousel/Carrousel";
+import RestaurantsList from "./components/restaurants-list/restaurantList";
 
 function App() {
   return (
     <>
-      <Searchbar />
       <Navbar />
       <Carrousel />
-      <CardRestaurants />
-      <Article />
+      <RestaurantsList />
+      {/* <Article /> */}
       <footer>
         <p>&copy;</p>
         <Link to="/about">About</Link>
