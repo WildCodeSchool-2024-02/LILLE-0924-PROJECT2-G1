@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./CardRestaurants.css";
 import FavoriteCard from "../favorite-card/FavoriteCard";
 interface restaurantProps {

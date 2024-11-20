@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Searchbar from "../Searchbar/SearchBar";
 import CardRestaurants from "../card-restaurants/CardRestaurants";
+import Searchbar from "../searchbar/SearchBar";
 
 interface restaurantProps {
   id: number;
@@ -69,7 +69,7 @@ function RestaurantsList() {
       <Searchbar search={search} setSearch={setSearch} />
       {/* la meme chose ici avec le filter */}
       <CardRestaurants
-        restaurantsList={search ? (restaurantsBySearch ?? [] ): restaurantsList}
+        restaurantsList={search ? (restaurantsBySearch ?? []) : restaurantsList}
       />
     </>
   );
