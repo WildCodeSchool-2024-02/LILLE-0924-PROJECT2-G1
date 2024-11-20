@@ -15,7 +15,7 @@ router.get("/restaurants", (req, res) => {
 router.get("/restaurants/:id", (req, res) => {
   const id = req.params.id;
   const dataFiltered = data.restaurants.filter(
-    (restaurants) => restaurants.id === Number.parseInt(id),
+    (restaurant) => restaurant.id === Number.parseInt(id),
   );
   res.send(dataFiltered[0]);
 });

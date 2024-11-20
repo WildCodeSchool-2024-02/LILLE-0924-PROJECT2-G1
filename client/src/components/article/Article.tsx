@@ -47,7 +47,7 @@ function Article() {
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
-    fetch(`http://localhost:3310/restau/${id}`)
+    fetch(`http://localhost:3310/restaurant/${id}`)
       .then((response) => response.json())
       .then((restaurantFromApi) => {
         return setRestaurant(restaurantFromApi);
