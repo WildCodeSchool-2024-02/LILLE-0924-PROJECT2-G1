@@ -1,8 +1,8 @@
+import { useParams } from "react-router-dom";
 import FavoriteArticle from "../favorite-article/FavoriteArticle";
 import ButtonVisited from "../visited-button/ButtonVisited";
 import "./Article.css";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface restaurantProps {
   id: number;
@@ -18,10 +18,10 @@ interface restaurantProps {
     wednesday: string;
     thursday: string;
     friday: string;
-    saturday?: string | undefined;
-    sunday?: string | undefined;
+    saturday: string | undefined;
+    sunday: string | undefined;
   };
-  location?:
+  location:
     | {
         latitude?: number;
         longitude?: number;
@@ -41,21 +41,25 @@ interface restaurantProps {
 }
 
 function Article() {
-  const [restaurantsList, setRestaurantsList] = useState<restaurantProps[]>([]);
+  const { id } = useParams();
+
+  const [restaurant, setRestaurant] = useState<restaurantProps>();
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
-    fetch("http://localhost:3310/restaurants")
+    fetch(`http://localhost:3310/restau/${id}`)
       .then((response) => response.json())
-      .then((restaurantsListFromApi) => {
-        return setRestaurantsList(restaurantsListFromApi.restaurants);
+      .then((restaurantFromApi) => {
+        return setRestaurant(restaurantFromApi);
       })
       .catch((err) => console.error(err));
   }, []);
 
   return (
     <>
-      {restaurantsList?.map((restaurant) => (
+      {restaurant && (
         <>
-          <div className="containerImage" key={"${restaurant.name}-container"}>
+          <div className="containerImage" key={`${restaurant.name}-container`}>
             <img
               className="imgRestaurant"
               src={restaurant.pictures.restaurant}
@@ -65,17 +69,18 @@ function Article() {
           </div>
           <div
             className="infoRestaurant"
-            key={"${restaurant.name}-description"}
+            key={`${restaurant.name}-description`}
           >
             <p>{restaurant.description}</p>
           </div>
-          <div className="allButtons" key={"${restaurant.name}-allButtons"}>
+          <div className="allButtons" key={`${restaurant.name}-allButtons`}>
             <ButtonVisited />
             <FavoriteArticle />
             <button type="button">réservation</button>
           </div>
           <section className="reviews" key={"${restaurant.name}-reviews"}>
             <h1>Avis google</h1>
+
             <div className="rewiewNameDate">
               <p>
                 Écrit par : <strong>{restaurant.reviews.reviewer}</strong>
@@ -101,7 +106,7 @@ function Article() {
             />
           </section>
         </>
-      ))}
+      )}
     </>
   );
 }
