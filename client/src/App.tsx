@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Carrousel from "./components/carrousel/Carrousel";
 import Navbar from "./components/navbar/Navbar";
 import RestaurantsList from "./components/restaurantsList/restaurantList";
+import Article from "./components/article/Article";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </nav>
       <Carrousel />
       <RestaurantsList />
+      <Article/>
       <footer>
         <p>&copy;</p>
         <Link to="/about">About</Link>
