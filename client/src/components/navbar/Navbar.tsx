@@ -1,4 +1,3 @@
-import Searchbar from "../searchbar/SearchBar";
 import "./Navbar.css";
 function Navbar() {
   return (
@@ -9,9 +8,6 @@ function Navbar() {
         alt="Flandresto"
       />
       <div className="filter">
-        <section className="searchBar">
-          <Searchbar />
-        </section>
         <div className="categoryBar">
           <button type="button" className="category">
             catégorie
