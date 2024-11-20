@@ -2,18 +2,21 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Article from "./components/article/Article";
-import CuisineFilterButtons from "./components/buttonCategory/CuisineFilterButtons";
 import CardRestaurants from "./components/card-restaurants/CardRestaurants";
 import Carrousel from "./components/carrousel/Carrousel";
+import Navbar from "./components/navbar/Navbar";
+import RestaurantsList from "./components/restaurants-list/restaurantList";
+import CuisineFilterButtons from "./components/buttonCategory/CuisineFilterButtons";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <nav>
+        <Navbar />
+      </nav>
       <CuisineFilterButtons restaurantsList={[]} />
       <Carrousel />
-      <CardRestaurants />
-      <Article />
+      <RestaurantsList />
       <footer>
         <p>&copy;</p>
         <Link to="/about">About</Link>
