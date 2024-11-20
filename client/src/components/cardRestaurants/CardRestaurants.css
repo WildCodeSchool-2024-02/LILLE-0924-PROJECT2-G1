@@ -9,7 +9,7 @@
   }
 }
 
-.containerRestaurants {
+.container-restaurants {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,12 +23,12 @@
   animation-range: entry 0% cover 20%;
 }
 
-.imgRestaurant {
+.img-restaurant {
   width: 100%;
-  height: 20rem;
+  height: 18rem;
 }
 
-.favoriteCard {
+.favorite-card {
   position: absolute;
   top: -15px;
   right: 0px;

@@ -5,7 +5,7 @@ interface imageFromApiProps {
   webformatURL: string;
 }
 
-function RandomImages() {
+function Carrousel() {
   const [images, setImages] = useState<string[]>();
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function RandomImages() {
   return (
     <>
       <div className="carousel">
-        <div className="carouselTrack">
+        <div className="carousel-track">
           {images?.map((image: string) => (
             <img src={image} key={image} alt="carousel" />
           ))}
@@ -37,4 +37,4 @@ function RandomImages() {
   );
 }
 
-export default RandomImages;
+export default Carrousel;

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./CardRestaurants.css";
 import FavoriteCard from "../favoriteCard/FavoriteCard";
 
@@ -37,27 +36,20 @@ interface restaurantProps {
     date: string;
   };
 }
-function CardRestaurants() {
-  const [restaurantsList, setRestaurantsList] = useState<restaurantProps[]>([]);
-  useEffect(() => {
-    fetch("http://localhost:3310/restaurants")
-      .then((response) => response.json())
-      .then((restaurantsListFromApi) => {
-        return setRestaurantsList(restaurantsListFromApi.restaurants);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+function CardRestaurants({
+  restaurantsList,
+}: { restaurantsList: restaurantProps[] }) {
   return (
-    <div className="containerRestaurants">
+    <div className="container-restaurants">
       {restaurantsList?.map((element) => (
         <div key={element.id} className=" restaurant restaurant-id">
-          <p className="favoriteCard">
+          <p className="favorite-card">
             <FavoriteCard />
           </p>
           <img
             src={element.pictures.card}
             alt={element.name}
-            className="imgRestaurant"
+            className="img-restaurant"
           />
           <h1>{element.name}</h1>
           <p> cuisine:{element.cuisine}</p>

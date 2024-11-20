@@ -9,7 +9,7 @@ function FavoriteArticle() {
   };
 
   return (
-    <button type="button" onClick={toggleFavorite} className="favoriteArticle">
+    <button type="button" onClick={toggleFavorite} className="favorite-article">
       {isFavorited ? "❤" : "♡"}
     </button>
   );

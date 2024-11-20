@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #dacda8;
+  --secondary-color: #b5b682;
+}
+
+nav {
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .logo {
+  width: 15%;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.category-bar {
+  background: var(--primary-color);
+  border-style: none;
+  font-size: large;
+}

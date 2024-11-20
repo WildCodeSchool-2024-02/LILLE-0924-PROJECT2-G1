@@ -55,13 +55,13 @@ function Article() {
     <>
       {restaurantsList?.map((restaurant) => (
         <>
-          <div className="containerImage" key={"${restaurant.name}-container"}>
+          <div className="container-image" key={"${restaurant.name}-container"}>
             <img
-              className="img-restaurant"
+              className="image-restaurant"
               src={restaurant.pictures.restaurant}
               alt=""
             />
-            <img className="imgDish" src={restaurant.pictures.dish} alt="" />
+            <img className="img-dish" src={restaurant.pictures.dish} alt="" />
           </div>
           <div
             className="info-restaurant"
@@ -84,7 +84,7 @@ function Article() {
             </div>
             <p>{restaurant.reviews.comment}</p>
             <p>{restaurant.reviews.rating}/5</p>
-            <div className="rewiewNameDate">
+            <div className="rewiew-name-date">
               <p>
                 Écrit par : <strong>{restaurant.reviews.reviewer}</strong>
               </p>
@@ -93,7 +93,7 @@ function Article() {
             <p>{restaurant.reviews.comment}</p>
             <p>{restaurant.reviews.rating}/5</p>
           </section>
-          <section className="googlemap" key={"${restaurant.name}-map"}>
+          <section className="google-map" key={"${restaurant.name}-map"}>
             <h1>Google map</h1>
             <img
               src="https://img.freepik.com/vecteurs-libre/application-localisation-suivi-coronavirus-concept_23-2148659370.jpg?ga=GA1.1.1387876668.1730892268&semt=ais_hybrid"

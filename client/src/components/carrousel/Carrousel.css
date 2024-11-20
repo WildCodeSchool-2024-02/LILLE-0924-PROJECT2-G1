@@ -8,14 +8,14 @@
   flex-shrink: 0;
 }
 
-.carouselTrack {
+.carousel-track {
   display: flex;
   animation: scroll 40s linear infinite;
   background: white;
   flex-shrink: 0;
 }
 
-.carouselTrack img {
+.carousel-track img {
   width: 18%; /* Largeur de chaque image */
   height: 20vh;
   object-fit: cover;
