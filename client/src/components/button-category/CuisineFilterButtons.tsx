@@ -34,14 +34,6 @@ interface RestaurantProps {
 function CuisineFilterButtons({ restaurantsList }) {
   const [selectedCuisine, setSelectedCuisine] = useState("Toutes");
 
-  //   useEffect(() => {
-  //     fetch("http://localhost:3310/restaurants")
-  //       .then((response) => response.json())
-  //       .then((restaurantsListFromApi) => {
-  //         setRestaurantsList(restaurantsListFromApi.restaurants);
-  //       });
-  //   }, []);
-
   const cuisines = [
     "Toutes",
     ...new Set(restaurantsList.map((restaurant) => restaurant.cuisine)),
