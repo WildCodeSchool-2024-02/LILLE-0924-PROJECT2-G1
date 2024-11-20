@@ -8,14 +8,14 @@ const router = express.Router();
 /* ************************************************************************* */
 
 // Define item-related routes
-router.get("/restau", (req, res) => {
+router.get("/restaurant", (req, res) => {
   res.send(data);
 });
 
-router.get("/restau/:id", (req, res) => {
+router.get("/restaurant/:id", (req, res) => {
   const id = req.params.id;
   const dataFiltered = data.restaurants.filter(
-    (restau) => restau.id === Number.parseInt(id),
+    (restaurant) => restaurant.id === Number.parseInt(id),
   );
   res.send(dataFiltered[0]);
 });
