@@ -12,7 +12,7 @@ router.get("/restaurants", (req, res) => {
   res.send(data);
 });
 
-router.get("/restaurants/:id", (req, res) => {
+router.get("/restaurant/:id", (req, res) => {
   const id = req.params.id;
   const dataFiltered = data.restaurants.filter(
     (restaurant) => restaurant.id === Number.parseInt(id),
