@@ -1,5 +1,5 @@
-import ButtonVisited from "../US-Visited/ButtonVisited";
-import FavoriteArticle from "../favorite-article/FavoriteArticle";
+import ButtonVisited from "../buttonVisited/ButtonVisited";
+import FavoriteArticle from "../favoriteArticle/FavoriteArticle";
 import "./Article.css";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -57,19 +57,19 @@ function Article() {
         <>
           <div className="containerImage" key={"${restaurant.name}-container"}>
             <img
-              className="imgRestaurant"
+              className="img-restaurant"
               src={restaurant.pictures.restaurant}
               alt=""
             />
             <img className="imgDish" src={restaurant.pictures.dish} alt="" />
           </div>
           <div
-            className="infoRestaurant"
+            className="info-restaurant"
             key={"${restaurant.name}-description"}
           >
             <p>{restaurant.description}</p>
           </div>
-          <div className="allButtons" key={"${restaurant.name}-allButtons"}>
+          <div className="all-buttons" key={"${restaurant.name}-allButtons"}>
             <ButtonVisited />
             <FavoriteArticle />
             <button type="button">réservation</button>
@@ -93,7 +93,7 @@ function Article() {
             <p>{restaurant.reviews.comment}</p>
             <p>{restaurant.reviews.rating}/5</p>
           </section>
-          <section className="googleMap" key={"${restaurant.name}-map"}>
+          <section className="googlemap" key={"${restaurant.name}-map"}>
             <h1>Google map</h1>
             <img
               src="https://img.freepik.com/vecteurs-libre/application-localisation-suivi-coronavirus-concept_23-2148659370.jpg?ga=GA1.1.1387876668.1730892268&semt=ais_hybrid"

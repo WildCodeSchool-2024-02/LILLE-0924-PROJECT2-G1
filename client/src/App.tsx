@@ -1,8 +1,8 @@
 import "./App.css";
 import { Link } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/NavBar";
 import Article from "./components/article/Article";
-import CardRestaurants from "./components/card-restaurants/CardRestaurants";
+import CardRestaurants from "./components/cardRestaurants/CardRestaurants";
 import Carrousel from "./components/carrousel/Carrousel";
 
 function App() {
