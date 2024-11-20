@@ -1,5 +1,6 @@
 import "./App.css";
 import { Link } from "react-router-dom";
+import CuisineFilterButtons from "./components/buttonCategory/CuisineFilterButtons";
 import Carrousel from "./components/carrousel/Carrousel";
 import Navbar from "./components/navbar/Navbar";
 import RestaurantsList from "./components/restaurants-list/restaurantList";
@@ -10,6 +11,7 @@ function App() {
       <nav>
         <Navbar />
       </nav>
+      <CuisineFilterButtons restaurantsList={[]} />
       <Carrousel />
       <RestaurantsList />
       <footer>
