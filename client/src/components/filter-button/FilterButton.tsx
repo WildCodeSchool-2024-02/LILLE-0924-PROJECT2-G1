@@ -8,10 +8,9 @@ function filterButton() {
     setSelectedCuisine(event.target.value);
   };
 
-  // Filtrage des restaurants en fonction des filtres sélectionnés
   const filteredRestaurants = selectedCuisine === "Toutes"
-    ? restaurantList
-    : restaurantList.filter((restaurant) => restaurant.cuisine === selectedCuisine);
+    ? restaurantsList
+    : restaurantsList.filter((restaurant) => restaurant.cuisine === selectedCuisine);
 
     return ( 
         <div>
