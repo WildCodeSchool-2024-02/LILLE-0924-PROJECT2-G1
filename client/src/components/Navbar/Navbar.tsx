@@ -6,9 +6,9 @@ function Navbar() {
         src="/public/images/DALL·E-2024-11-05-11.41.34-A-logo-for-a-restaurant-named-_Flandresto_-with-a-minimalistic-design.png"
         alt="logo"
       />
-      <section className="search-bar">
+      <section className="searchBar">
         <input
-          className="input"
+          className="inputSearchBar"
           type="text"
           name="searchBar"
           id="searchBar"

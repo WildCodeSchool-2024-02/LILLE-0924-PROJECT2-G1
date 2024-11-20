@@ -1,0 +1,53 @@
+.review {
+  padding: 10%;
+  width: 30%;
+  text-align: center;
+  justify-self: center;
+}
+.googleMap {
+  padding: 0;
+  width: 30%;
+  text-align: center;
+  justify-self: center;
+}
+.containerImage {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 80%;
+  margin-left: 10%;
+}
+.imgRestaurant {
+  width: 40%;
+}
+.imgDish {
+  width: 40%;
+}
+.infoRestaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.allButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reviews {
+  width: 80%;
+  padding: 10px;
+}
+.reviews h1 {
+  font-size: 2em;
+}
+.rewiewNameDate {
+  border-top: solid gray 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.googleMap img {
+  width: 100%;
+}
