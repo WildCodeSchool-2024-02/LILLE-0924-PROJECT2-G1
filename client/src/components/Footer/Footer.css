@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2%;
+  background-color: #dacda8;
+}
+
+.about {
+  text-decoration: none;
+  color: black;
+}
