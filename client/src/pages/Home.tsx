@@ -1,13 +1,23 @@
+import { useEffect, useState } from "react";
+import CardRestaurants from "../components/card-restaurants/CardRestaurants";
+import "../components/card-restaurants/CardRestaurants.css";
+import type { restaurantProps } from "../types/RestaurantType";
+
 function Home() {
+  // usestate
+  const [restaurantsList, setRestaurantsList] = useState<restaurantProps[]>([]);
+  // fetch appel API
+  useEffect(() => {
+    fetch("http://localhost:3310/restaurants")
+      .then((response) => response.json())
+      .then((dataFromApi) => {
+        return setRestaurantsList(dataFromApi.restaurants);
+      });
+  }, []);
+
   return (
     <>
-      <h1>Home</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-        optio accusamus possimus qui, doloremque ipsa soluta quia maiores. Quas
-        quo sint libero quibusdam impedit id inventore optio alias quaerat
-        accusamus!
-      </p>
+      <CardRestaurants restaurantsList={restaurantsList} />
     </>
   );
 }
