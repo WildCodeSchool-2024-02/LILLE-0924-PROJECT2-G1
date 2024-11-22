@@ -4,7 +4,9 @@ import FavoriteCard from "../favorite-card/FavoriteCard";
 
 function CardRestaurants({
   restaurantsList,
-}: { restaurantsList: restaurantProps[] }) {
+}: {
+  restaurantsList: restaurantProps[] | undefined;
+}) {
   return (
     <div className="containerRestaurants">
       {restaurantsList?.map((element) => (
