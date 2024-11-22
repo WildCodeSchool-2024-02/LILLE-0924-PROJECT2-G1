@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardRestaurants from "../card-restaurants/CardRestaurants";
+import CardRestaurants from "../cardRestaurants/CardRestaurants";
 import Searchbar from "../searchbar/SearchBar";
 
 interface restaurantProps {

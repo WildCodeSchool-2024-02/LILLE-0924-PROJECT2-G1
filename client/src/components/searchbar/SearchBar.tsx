@@ -8,6 +8,7 @@ function Searchbar({ search, setSearch }: SearchbarProps) {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value);
   };
+
   return (
     <>
       <form className="searchbar">
@@ -16,7 +17,7 @@ function Searchbar({ search, setSearch }: SearchbarProps) {
           name="character"
           type="text"
           value={search}
-          onChange={handleChange}
+          onChange={(event) => handleChange(event)}
           placeholder="Nom du restaurant ou type de cuisine"
           className="input"
         />

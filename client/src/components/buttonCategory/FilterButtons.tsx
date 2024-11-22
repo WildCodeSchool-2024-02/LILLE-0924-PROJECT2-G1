@@ -1,27 +1,22 @@
-import { useEffect, useState } from "react";
+import type { Dispatch, SetStateAction } from "react";
+import "./FilterButtons.css";
 
-function filterButton() {
-  const [selectedCuisine, setSelectedCuisine] = useState("Toutes");
+interface CuisineProps {
+  selectedCuisine: string;
+  setSelectedCuisine: Dispatch<SetStateAction<string>>;
+}
 
-  const handleCuisineChange = (event) => {
-    setSelectedCuisine(event.target.value);
-  };
-
-  const filteredRestaurants =
-    selectedCuisine === "Toutes"
-      ? restaurantsList
-      : restaurantsList.filter(
-          (restaurant) => restaurant.cuisine === selectedCuisine,
-        );
-
+function FilterButtons({ selectedCuisine, setSelectedCuisine }: CuisineProps) {
   return (
     <div>
       <div className="filter-container">
-        <label htmlFor="cuisine">Filtrer par cuisine : </label>
+        <label htmlFor="cuisine">Catégories : </label>
         <select
-          id="cuisine"
+          id="character"
+          name="character"
           value={selectedCuisine}
-          onChange={handleCuisineChange}
+          onChange={(event) => setSelectedCuisine(event.target.value)}
+          className="input"
         >
           <option value="Toutes">Toutes</option>
           <option value="Française">Française</option>
@@ -47,4 +42,4 @@ function filterButton() {
   );
 }
 
-export default filterButton;
+export default FilterButtons;
