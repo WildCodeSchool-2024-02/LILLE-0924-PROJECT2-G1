@@ -1,7 +1,7 @@
 import "./CardRestaurants.css";
 import { Link } from "react-router-dom";
 import type { restaurantProps } from "../../types/RestaurantType";
-import FavoriteCard from "../favorite-card/FavoriteCard";
+import FavoriteCard from "../favoriteCard/FavoriteCard";
 
 function CardRestaurants({
   restaurantsList,
