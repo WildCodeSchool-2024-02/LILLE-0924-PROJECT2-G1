@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import FavoriteArticle from "../favorite-article/FavoriteArticle";
-import ButtonVisited from "../visited-button/ButtonVisited";
+import ButtonVisited from "../visitedButton/ButtonVisited";
 import "./Article.css";
 import { useEffect, useState } from "react";
 
