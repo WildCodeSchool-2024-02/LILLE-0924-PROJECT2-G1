@@ -1,25 +1,21 @@
-.review {
-  padding: 10%;
-  width: 30%;
-  text-align: center;
-  justify-self: center;
+.all-content {
+  display: flex;
+  flex-direction: column;
 }
+
 .googleMap {
   padding: 0;
   width: 30%;
-  text-align: center;
-  justify-self: center;
+  align-self: center;
 }
-.containerImage {
+.container-image {
   display: flex;
   justify-content: center;
   gap: 5px;
   width: 80%;
   margin-left: 10%;
 }
-.imgRestaurant {
-  width: 40%;
-}
+
 .imgDish {
   width: 40%;
 }
@@ -34,6 +30,7 @@
   justify-content: center;
 }
 .reviews {
+  align-self: center;
   width: 80%;
   padding: 10px;
 }
@@ -50,4 +47,7 @@
 }
 .googleMap img {
   width: 100%;
+}
+h1 {
+  text-align: center;
 }

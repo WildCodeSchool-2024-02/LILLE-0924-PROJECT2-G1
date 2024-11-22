@@ -31,5 +31,5 @@ export interface restaurantProps {
     rating: number;
     comment: string;
     date: string;
-  };
+  }[];
 }

@@ -2,3 +2,7 @@
   --primary-color: #dacda8;
   --secondary-color: #b5b682;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
