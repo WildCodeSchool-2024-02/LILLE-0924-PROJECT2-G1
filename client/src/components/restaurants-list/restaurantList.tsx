@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import "./CardRestaurants.css";
-import FavoriteCard from "../favorite-card/FavoriteCard";
+import CardRestaurants from "../cardRestaurants/CardRestaurants";
+import Searchbar from "../searchbar/SearchBar";
 
 interface restaurantProps {
   id: number;
@@ -37,8 +37,12 @@ interface restaurantProps {
     date: string;
   };
 }
-function CardRestaurants() {
+function RestaurantsList() {
   const [restaurantsList, setRestaurantsList] = useState<restaurantProps[]>([]);
+  const [restaurantsBySearch, setrestaurantsBySearch] =
+    useState<restaurantProps[]>();
+  const [search, setSearch] = useState<string>("");
+
   useEffect(() => {
     fetch("http://localhost:3310/restaurants")
       .then((response) => response.json())
@@ -47,23 +51,27 @@ function CardRestaurants() {
       })
       .catch((err) => console.error(err));
   }, []);
+
+  useEffect(() => {
+    if (search) {
+      setrestaurantsBySearch(
+        restaurantsList.filter((restaurant) => {
+          return (
+            restaurant.name.toLowerCase().includes(search.toLowerCase()) ||
+            restaurant.cuisine.toLowerCase().includes(search.toLowerCase())
+          );
+        }),
+      );
+    }
+  }, [search, restaurantsList]);
   return (
-    <div className="containerRestaurants">
-      {restaurantsList?.map((element) => (
-        <div key={element.id} className=" restaurant restaurant-id">
-          <img
-            src={element.pictures.card}
-            alt={element.name}
-            className="imgRestaurant"
-          />
-          <h1>{element.name}</h1>
-          <p> cuisine:{element.cuisine}</p>
-          <FavoriteCard />
-          <p>Note : {element.rating}/5</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <Searchbar search={search} setSearch={setSearch} />
+      {/* la meme chose ici avec le filter */}
+      <CardRestaurants
+        restaurantsList={search ? (restaurantsBySearch ?? []) : restaurantsList}
+      />
+    </>
   );
 }
-
-export default CardRestaurants;
+export default RestaurantsList;
