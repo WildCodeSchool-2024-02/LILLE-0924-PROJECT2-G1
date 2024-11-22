@@ -18,7 +18,7 @@ function FilterButtons({ selectedCuisine, setSelectedCuisine }: CuisineProps) {
           onChange={(event) => setSelectedCuisine(event.target.value)}
           className="input"
         >
-          <option value="Toutes">Toutes</option>
+          <option value="">Toutes</option>
           <option value="Française">Française</option>
           <option value="Japonaise">Japonaise</option>
           <option value="Italienne">Italienne</option>
