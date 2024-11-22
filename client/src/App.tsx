@@ -1,14 +1,12 @@
 import "./App.css";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <Outlet />
-      <footer>
-        <p>&copy;</p>
-        <Link to="/about">About</Link>
-      </footer>
+      <Footer />
     </>
   );
 }
