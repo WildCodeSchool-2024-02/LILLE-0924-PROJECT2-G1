@@ -47,14 +47,13 @@ function Home() {
 
   return (
     <>
-
-    <div className='container-search-filter'>
-      <Searchbar search={search} setSearch={setSearch} />
-      <FilterButtons
-        selectedCuisine={selectedCuisine}
-        setSelectedCuisine={setSelectedCuisine}
-      />
-    </div>
+      <div className="container-search-filter">
+        <Searchbar search={search} setSearch={setSearch} />
+        <FilterButtons
+          selectedCuisine={selectedCuisine}
+          setSelectedCuisine={setSelectedCuisine}
+        />
+      </div>
       <CardRestaurants
         restaurantsList={
           !!search || !!selectedCuisine

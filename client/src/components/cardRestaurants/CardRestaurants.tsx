@@ -2,24 +2,6 @@ import "./CardRestaurants.css";
 import type { restaurantProps } from "../../types/RestaurantType";
 import FavoriteCard from "../favoriteCard/FavoriteCard";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".restaurant-card");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.dataset.visible = "true";
-        }
-      });
-    },
-    { threshold: 0.1 } // Active l'animation lorsque 10 % de l'élément est visible
-  );
-
-  cards.forEach((card) => observer.observe(card));
-});
-
-
 function CardRestaurants({
   restaurantsList,
 }: {

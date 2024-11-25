@@ -1,7 +1,7 @@
 .searchbar {
   display: flex;
   flex-direction: row;
-  justify-content:start;
+  justify-content: start;
   background-color: #dacda8;
   width: 100%;
 }
@@ -10,7 +10,7 @@
   width: 100%;
   text-align: center;
   border: 0;
-  background-color:#b5b682;
+  background-color: #b5b682;
   align-items: center;
 }
 
