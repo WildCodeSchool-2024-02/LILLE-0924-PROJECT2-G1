@@ -1,39 +1,46 @@
-function Reservation() {
-  return (
-    <>
-      <h1>Formulaire de réservation</h1>
+import "./Reservation.css";
 
-      <h2>Saisie des informations</h2>
+type Props = {
+  onClickCancel: () => void;
+  onClickValidate: () => void;
+};
+
+function Reservation({ onClickCancel, onClickValidate }: Props) {
+  return (
+    <div className="reservation-form">
+      <h1>Formulaire de réservation</h1>
       <p>
         <strong>Nom complet :</strong>
         <input
-          className="input inputName"
+          className="input input-name"
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherche"
+          placeholder="Antoine Fouvert"
+          required
         />
       </p>
 
       <p>
         <strong>Adresse e-mail :</strong>
         <input
-          className="input inputMail"
-          type="text"
+          className="input input-mail"
+          type="email"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherche"
+          placeholder="AntoineFouvert@toto.gmail.com"
         />
       </p>
 
       <p>
         <strong>Numéro de téléphone :</strong>
         <input
-          className="input inputTel"
+          className="input input-tel"
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Recherche"
+          placeholder="123456789"
+          required
         />
       </p>
 
@@ -41,15 +48,17 @@ function Reservation() {
 
       <p>
         <strong>Date et heure : </strong>
-        Le <input type="date" id="start" name="trip-start" />à{" "}
-        <input
-          type="time"
-          id="appt"
-          name="appt"
-          min="12:00"
-          max="23:00"
-          required
-        />
+        Le <input type="date" id="start" name="trip-start" required /> à{" "}
+        <span>
+          <input
+            type="time"
+            id="appt"
+            name="appt"
+            min="12:00"
+            max="23:00"
+            required
+          />
+        </span>
       </p>
 
       <p>
@@ -59,14 +68,19 @@ function Reservation() {
           id="tentacles"
           name="tentacles"
           min="1"
-          max="100"
+          max="12"
+          required
         />
       </p>
       <div>
-        <button type="button">Confirmer</button>
-        <button type="button">Annuler</button>
+        <button type="button" onClick={onClickCancel}>
+          Confirmer
+        </button>
+        <button type="button" onClick={onClickValidate}>
+          Annuler
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 export default Reservation;

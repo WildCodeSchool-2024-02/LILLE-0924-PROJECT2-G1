@@ -1,6 +1,7 @@
 .all-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .googleMap {
@@ -13,7 +14,6 @@
   justify-content: center;
   gap: 5px;
   width: 80%;
-  margin-left: 10%;
 }
 
 .imgDish {
@@ -22,6 +22,12 @@
 .infoRestaurant {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+.restaurant-history {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
   justify-content: center;
 }
 .allButtons {
@@ -50,4 +56,27 @@
 }
 h1 {
   text-align: center;
+}
+.reservation-button {
+  cursor: pointer;
+}
+.popup-form {
+  width: 50%;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  color: black;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.popup-form.active {
+  visibility: visible;
+  /* modify position on screen -> Add media queries when css responsive will be fixed */
+  top: 150vh;
+  transform: translate(-50%, -50%) scale(1);
 }
