@@ -14,12 +14,12 @@
   gap: 10px;
   width: 100%;
 }
-.img-gauche {
+.img-left {
   height: 65vh;
   width: 30vw;
 }
 
-.img-droite {
+.img-right {
   height: 65vh;
   width: 30vw;
 }
@@ -88,12 +88,12 @@
   width: 80%;
   padding: 10px;
   background-color: lightgray;
-  opacity: 0.8 ;
+  opacity: 0.8;
   border-radius: 8px;
   margin-top: 50px;
 }
 
-h1{
+h1 {
   font-size: 2em;
   text-align: center;
 }
@@ -123,11 +123,11 @@ h1{
     width: 100%;
   }
 
-  .img-gauche {
+  .img-left {
     height: 40vh;
     width: 46%;
   }
-  .img-droite {
+  .img-right {
     height: 40vh;
     width: 46%;
   }

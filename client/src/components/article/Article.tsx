@@ -27,11 +27,11 @@ function Article() {
           <h1>{restaurant.name}</h1>
           <div className="container-image" key={`${restaurant.name}-container`}>
             <img
-              className="img-gauche"
+              className="img-left"
               src={restaurant.pictures.restaurant}
               alt=""
             />
-            <img className="img-droite" src={restaurant.pictures.dish} alt="" />
+            <img className="img-right" src={restaurant.pictures.dish} alt="" />
           </div>
           <div
             className="infoRestaurant"
