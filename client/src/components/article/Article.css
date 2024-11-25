@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.googleMap {
+.google-map {
   padding: 0;
   width: 30%;
   align-self: center;
@@ -16,50 +16,50 @@
   width: 80%;
 }
 
-.imgDish {
+.img-dish {
   width: 40%;
 }
-.infoRestaurant {
+
+.info-restaurant {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .restaurant-history {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
   justify-content: center;
 }
-.allButtons {
+
+.all-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .reviews {
   align-self: center;
   width: 80%;
   padding: 10px;
 }
+
 .reviews h1 {
   font-size: 2em;
 }
-.rewiewNameDate {
-  border-top: solid gray 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-.googleMap img {
+
+.google-map img {
   width: 100%;
 }
 h1 {
   text-align: center;
 }
+
 .reservation-button {
   cursor: pointer;
 }
+
 .popup-form {
   width: 50%;
   background: #fff;
