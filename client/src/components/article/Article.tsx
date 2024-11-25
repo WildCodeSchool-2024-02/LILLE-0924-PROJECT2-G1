@@ -27,11 +27,11 @@ function Article() {
           <h1>{restaurant.name}</h1>
           <div className="container-image" key={`${restaurant.name}-container`}>
             <img
-              className="imgRestaurant"
+              className="img-gauche"
               src={restaurant.pictures.restaurant}
               alt=""
             />
-            <img className="imgDish" src={restaurant.pictures.dish} alt="" />
+            <img className="img-droite" src={restaurant.pictures.dish} alt="" />
           </div>
           <div
             className="infoRestaurant"
@@ -41,8 +41,13 @@ function Article() {
           </div>
           <div className="allButtons" key={`${restaurant.name}-allButtons`}>
             <ButtonVisited />
-            <FavoriteArticle />
-            <button type="button">réservation</button>
+            <div className="favorite">
+              <FavoriteArticle />
+            </div>
+
+            <button type="button" className="reservation">
+              Reservation
+            </button>
           </div>
           <section className="reviews" key={"${restaurant.name}-reviews"}>
             <h1>Avis google</h1>
