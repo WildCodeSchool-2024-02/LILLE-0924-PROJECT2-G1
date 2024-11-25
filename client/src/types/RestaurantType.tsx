@@ -15,6 +15,11 @@ export interface restaurantProps {
     saturday?: string | undefined;
     sunday?: string | undefined;
   };
+  history: {
+    title: string;
+    details: string;
+    highlights: string;
+  };
   location?:
     | {
         latitude?: number;
