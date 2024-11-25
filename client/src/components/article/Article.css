@@ -12,12 +12,24 @@
 .container-image {
   display: flex;
   justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.img-left {
+  height: 65vh;
+  width: 30vw;
+}
+
+.img-right {
+  height: 65vh;
+  width: 30vw;
   gap: 5px;
   width: 80%;
 }
 
 .img-dish {
   width: 40%;
+
 }
 
 .info-restaurant {
@@ -36,25 +48,124 @@
 .all-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.visited {
+  background-color: #dacda8;
+  border: none;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-align: center;
+  text-size-adjust: 60%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.favorite {
+  background-color: #dacda8;
+  border: none;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-align: center;
+  text-size-adjust: 60%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.favorite:hover {
+  transform: scale(1.2);
+}
+.reservation {
+  background-color: #dacda8;
+  border: none;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-align: center;
+  text-size-adjust: 60%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation:hover {
+  transform: scale(1.2);
 }
 
 .reviews {
   align-self: center;
   width: 80%;
   padding: 10px;
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 8px;
+  margin-top: 50px;
 }
+
 
 .reviews h1 {
   font-size: 2em;
+  text-align: center;
 }
+
+
+.rewiewNameDate {
+  border-top: solid gray 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+
 
 .google-map img {
   width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
 }
-h1 {
-  text-align: center;
+.googleMap img {
+  width: 60%;
+  margin-left: 20%;
 }
+
+@media screen and (max-width: 700px) {
+  .container-image {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .img-left {
+    height: 40vh;
+    width: 46%;
+  }
+  .img-right {
+    height: 40vh;
+    width: 46%;
+  }
+  .reviews {
+    width: 90%;
+  }
+  p {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+ }
+
 
 .reservation-button {
   cursor: pointer;
@@ -76,7 +187,6 @@ h1 {
 
 .popup-form.active {
   visibility: visible;
-  /* modify position on screen -> Add media queries when css responsive will be fixed */
   top: 150vh;
   transform: translate(-50%, -50%) scale(1);
 }

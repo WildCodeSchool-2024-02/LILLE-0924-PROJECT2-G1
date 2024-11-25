@@ -35,31 +35,26 @@ function Article() {
       {restaurant && (
         <div className="all-content">
           <h1>{restaurant.name}</h1>
+
           <div
-            className="info-restaurant"
+           className="container-image"
             key={`${restaurant.name}-description`}
           >
             <p>{restaurant.description}</p>
           </div>
           <div className="container-image" key={`container-${restaurant.name}`}>
             <img
-              className="img-restaurant"
+            className="img-right" 
               src={restaurant.pictures.restaurant}
               alt=""
             />
-            <img className="img-dish" src={restaurant.pictures.dish} alt="" />
+            <img className="img-right" src={restaurant.pictures.dish} alt="" />
           </div>
           <div className="all-buttons" key={`${restaurant.name}-allButtons`}>
             <ButtonVisited />
-            <FavoriteArticle />
-            <button
-              type="button"
-              className="reservation-button"
-              onClick={handleClickPopupFormCancel}
-            >
-              Réserver !
-            </button>
-          </div>
+            <div className="favorite">
+              <FavoriteArticle />
+            </div>
           <div className={isActive ? "popup-form active" : "popup-form"}>
             <Reservation
               onClickCancel={handleClickPopupFormCancel}
