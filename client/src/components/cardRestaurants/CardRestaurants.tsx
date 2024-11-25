@@ -11,20 +11,22 @@ function CardRestaurants({
   return (
     <div className="container-restaurants">
       {restaurantsList?.map((element) => (
-        <div key={element.id} className="restaurant-card">
-          <img
-            src={element.pictures.card}
-            alt={element.name}
-            className="imgRestaurant"
-          />
-          <FavoriteCard />
-          <h1>{element.name}</h1>
-          <div className="cuisine-container">
-            <p> Cuisine : {element.cuisine}</p>
-            <br />
-            <p>Note : {element.rating}/5</p>
+        <Link to={`/article/${element.id}`} key={`url-${element.name}`}>
+          <div key={element.id} className="restaurant-card">
+            <img
+              src={element.pictures.card}
+              alt={element.name}
+              className="imgRestaurant"
+            />
+            <FavoriteCard />
+            <h1>{element.name}</h1>
+            <div className="cuisine-container">
+              <p> Cuisine : {element.cuisine}</p>
+              <br />
+              <p>Note : {element.rating}/5</p>
+            </div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
