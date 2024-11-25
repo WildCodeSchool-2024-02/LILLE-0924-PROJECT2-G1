@@ -1,11 +1,11 @@
 import "./Reservation.css";
 
-type Props = {
+type FunctionProps = {
   onClickCancel: () => void;
   onClickValidate: () => void;
 };
 
-function Reservation({ onClickCancel, onClickValidate }: Props) {
+function Reservation({ onClickCancel, onClickValidate }: FunctionProps) {
   return (
     <div className="reservation-form">
       <h1>Formulaire de réservation</h1>
