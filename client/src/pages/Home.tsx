@@ -55,9 +55,7 @@ function Home() {
           setSelectedCuisine={setSelectedCuisine}
         />
       </div>
-      <div>
         <Carrousel />
-      </div>
       <CardRestaurants
         restaurantsList={
           !!search || !!selectedCuisine
