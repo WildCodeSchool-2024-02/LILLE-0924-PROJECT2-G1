@@ -3,42 +3,7 @@ import FavoriteArticle from "../favorite-article/FavoriteArticle";
 import ButtonVisited from "../visitedButton/ButtonVisited";
 import "./Article.css";
 import { useEffect, useState } from "react";
-
-interface restaurantProps {
-  id: number;
-  name: string;
-  address: string;
-  cuisine: string;
-  price_range: string;
-  rating: number;
-  description: string;
-  hours: {
-    monday: string;
-    tuesday: string;
-    wednesday: string;
-    thursday: string;
-    friday: string;
-    saturday: string | undefined;
-    sunday: string | undefined;
-  };
-  location:
-    | {
-        latitude?: number;
-        longitude?: number;
-      }
-    | undefined;
-  pictures: {
-    card: string;
-    restaurant: string;
-    dish: string;
-  };
-  reviews: {
-    reviewer: string;
-    rating: number;
-    comment: string;
-    date: string;
-  };
-}
+import type { restaurantProps } from "../../types/RestaurantType";
 
 function Article() {
   const { id } = useParams();
@@ -56,10 +21,11 @@ function Article() {
   }, []);
 
   return (
-    <>
+    <div>
       {restaurant && (
-        <>
-          <div className="containerImage" key={`${restaurant.name}-container`}>
+        <div className="all-content">
+          <h1>{restaurant.name}</h1>
+          <div className="container-image" key={`${restaurant.name}-container`}>
             <img
               className="imgRestaurant"
               src={restaurant.pictures.restaurant}
@@ -80,23 +46,18 @@ function Article() {
           </div>
           <section className="reviews" key={"${restaurant.name}-reviews"}>
             <h1>Avis google</h1>
-
-            <div className="rewiewNameDate">
-              <p>
-                Écrit par : <strong>{restaurant.reviews.reviewer}</strong>
-              </p>
-              <p>Le {restaurant.reviews.date}</p>
-            </div>
-            <p>{restaurant.reviews.comment}</p>
-            <p>{restaurant.reviews.rating}/5</p>
-            <div className="rewiewNameDate">
-              <p>
-                Écrit par : <strong>{restaurant.reviews.reviewer}</strong>
-              </p>
-              <p>Le {restaurant.reviews.date}</p>
-            </div>
-            <p>{restaurant.reviews.comment}</p>
-            <p>{restaurant.reviews.rating}/5</p>
+            {restaurant.reviews.map((review) => (
+              <>
+                <p key={review.reviewer}>
+                  Écrit par : <strong>{review.reviewer} </strong>le{" "}
+                  {review.date}
+                </p>
+                <p key={review.reviewer}>{review.comment}</p>
+                <p key={review.reviewer}>
+                  Je donne une note de : {review.rating}/5
+                </p>
+              </>
+            ))}
           </section>
           <section className="googleMap" key={"${restaurant.name}-map"}>
             <h1>Google map</h1>
@@ -105,9 +66,9 @@ function Article() {
               alt="googlemap"
             />
           </section>
-        </>
+        </div>
       )}
-    </>
+    </div>
   );
 }
 export default Article;
