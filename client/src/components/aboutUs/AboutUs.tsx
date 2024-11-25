@@ -15,8 +15,8 @@ interface developperCrewProps {
 const developperCrew: developperCrewProps[] = [
   {
     name: {
-      first: "Foubert",
-      last: "Antoine",
+      first: "Antoine",
+      last: "Foubert",
     },
     picture: "server/public/assets/images/imgProAntoineF.jpeg",
     link: {
@@ -29,8 +29,8 @@ const developperCrew: developperCrewProps[] = [
   },
   {
     name: {
-      first: "Ido",
-      last: "Julien",
+      first: "Julien",
+      last: "Ido",
     },
     picture: "",
     link: {
@@ -42,8 +42,8 @@ const developperCrew: developperCrewProps[] = [
   },
   {
     name: {
-      first: "Lesage",
-      last: "Emeric",
+      first: "Emeric",
+      last: "Lesage",
     },
     picture: "server/public/assets/images/imgProEmericL.jpeg",
     link: {
@@ -56,8 +56,8 @@ const developperCrew: developperCrewProps[] = [
   },
   {
     name: {
-      first: "Priez",
-      last: "Mathieu",
+      first: "Mathieu",
+      last: "Priez",
     },
     picture: "",
     link: {
@@ -70,18 +70,28 @@ const developperCrew: developperCrewProps[] = [
 ];
 
 function AboutUs() {
-  return (
+  return developperCrew.map((dev) => (
     <>
-      <img src={developperCrew[0].picture} alt={developperCrew[0].name.last} />
-      <h1>
-        {developperCrew[0].name.last} {developperCrew[0].name.first}
+      <img
+        src={dev.picture}
+        alt={dev.name.last}
+        key={`${dev.name.first}-img`}
+      />
+      <h1 key={`${dev.name.last}`}>
+        {dev.name.first} {dev.name.last}
       </h1>
-      <p>Little description of the developper</p>
-      <a href={developperCrew[0].link.linkedin}>LinkedIn</a>
-      <a href={developperCrew[0].link.github}>Github</a>
-      <a href={developperCrew[0].link.cv}>CV</a>
+      <p key={`${dev.description}-Github`}>{dev.description}</p>
+      <a href={dev.link.linkedin} key={`${dev.name.first}-linkedin`}>
+        LinkedIn
+      </a>
+      <a href={dev.link.github} key={`${dev.name.first}-Github`}>
+        Github
+      </a>
+      <a href={dev.link.cv} key={`${dev.name.first}-Github`}>
+        CV
+      </a>
     </>
-  );
+  ));
 }
 
 export default AboutUs;
