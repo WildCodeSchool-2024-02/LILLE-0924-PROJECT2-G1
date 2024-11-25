@@ -4,6 +4,7 @@ import "../components/cardRestaurants/CardRestaurants.css";
 import FilterButtons from "../components/buttonCategory/FilterButtons";
 import Searchbar from "../components/searchbar/SearchBar";
 import type { restaurantProps } from "../types/RestaurantType";
+import "./Home.css";
 
 function Home() {
   // usestate
@@ -46,11 +47,13 @@ function Home() {
 
   return (
     <>
-      <Searchbar search={search} setSearch={setSearch} />
-      <FilterButtons
-        selectedCuisine={selectedCuisine}
-        setSelectedCuisine={setSelectedCuisine}
-      />
+      <div className="container-search-filter">
+        <Searchbar search={search} setSearch={setSearch} />
+        <FilterButtons
+          selectedCuisine={selectedCuisine}
+          setSelectedCuisine={setSelectedCuisine}
+        />
+      </div>
       <CardRestaurants
         restaurantsList={
           !!search || !!selectedCuisine

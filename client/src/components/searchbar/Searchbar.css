@@ -1,11 +1,13 @@
 .searchbar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
+  background-color: #dacda8;
+  width: 100%;
 }
 
 .input {
-  width: 90%;
+  width: 100%;
   text-align: center;
   border: 0;
   background-color: #b5b682;
@@ -24,8 +26,4 @@
 .elementdeliste {
   width: 60%;
   text-align: left;
-}
-.buttonrefresh {
-  background-color: #b5b682;
-  border: 0;
 }

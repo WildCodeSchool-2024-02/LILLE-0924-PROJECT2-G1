@@ -41,3 +41,4 @@ function RestaurantsList() {
   );
 }
 export default RestaurantsList;
+

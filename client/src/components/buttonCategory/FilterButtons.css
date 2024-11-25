@@ -1,11 +1,6 @@
 .filter-container {
-  margin-bottom: 20px;
-}
-
-.button-group {
+  width: 50%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .category-button {
@@ -29,7 +24,7 @@
 }
 
 .restaurant-list {
-  margin-top: 20px;
+  margin-top: 30%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
@@ -41,4 +36,11 @@
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#character.input {
+  width: 100%;
+  text-align: center;
+  border: 0;
+  background-color: #dacda8;
+  align-items: center;
 }

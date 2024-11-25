@@ -9,21 +9,22 @@ function CardRestaurants({
   restaurantsList: restaurantProps[] | undefined;
 }) {
   return (
-    <div className="containerRestaurants">
+    <div className="container-restaurants">
       {restaurantsList?.map((element) => (
-        <Link key={element.name} to={`/article/${element.id}`}>
-          <div key={element.id} className="restaurant-container">
-            <img
-              src={element.pictures.card}
-              alt={element.name}
-              className="imgRestaurant"
-            />
-            <h1>{element.name}</h1>
-            <p> cuisine:{element.cuisine}</p>
-            <FavoriteCard />
+        <div key={element.id} className="restaurant-card">
+          <img
+            src={element.pictures.card}
+            alt={element.name}
+            className="imgRestaurant"
+          />
+          <FavoriteCard />
+          <h1>{element.name}</h1>
+          <div className="cuisine-container">
+            <p> Cuisine : {element.cuisine}</p>
+            <br />
             <p>Note : {element.rating}/5</p>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );

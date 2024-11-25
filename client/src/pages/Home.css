@@ -1,0 +1,10 @@
+.container-search-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 4vh;
+}
+
+:root {
+  background-color: #fffff8;
+}
