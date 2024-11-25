@@ -8,13 +8,6 @@ function Navbar() {
         src="./public/images/logo-flandresto.png"
         alt="Flandresto"
       />
-      <div className="filter">
-        <div className="categoryBar">
-          <button type="button" className="category">
-            catégorie
-          </button>
-        </div>
-      </div>
     </>
   );
 }

@@ -1,6 +1,11 @@
 .favoriteCard {
-  font-size: x-large;
+  display: flex;
+  font-size:medium;
   color: red;
   background-color: transparent;
   border: 0;
+  z-index: 1;
+  width: 10%;
+  margin-top: -10%;
+  justify-content: end;
 }
