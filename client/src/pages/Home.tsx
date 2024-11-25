@@ -4,6 +4,7 @@ import "../components/cardRestaurants/CardRestaurants.css";
 import FilterButtons from "../components/buttonCategory/FilterButtons";
 import Searchbar from "../components/searchbar/SearchBar";
 import type { restaurantProps } from "../types/RestaurantType";
+import Carrousel from "../components/carrousel/Carrousel";
 import "./Home.css";
 
 function Home() {
@@ -53,6 +54,9 @@ function Home() {
           selectedCuisine={selectedCuisine}
           setSelectedCuisine={setSelectedCuisine}
         />
+      </div>
+      <div>
+        <Carrousel />
       </div>
       <CardRestaurants
         restaurantsList={
