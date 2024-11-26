@@ -18,7 +18,7 @@ const developperCrew: developperCrewProps[] = [
       first: "Foubert",
       last: "Antoine",
     },
-    picture: "server/public/assets/images/imgProAntoineF.jpeg",
+    picture: "/public/images/imgProAntoineF.png",
     link: {
       linkedin: "https://www.linkedin.com/in/antoine-foubert-152ba413b/",
       github: "https://github.com/foub404",
@@ -32,20 +32,21 @@ const developperCrew: developperCrewProps[] = [
       first: "Ido",
       last: "Julien",
     },
-    picture: "",
+    picture: "/public/images/imgProJulienI.png",
     link: {
       linkedin: "https://www.linkedin.com/in/julien-ido-33bb69335/",
       github: "https://github.com/JuIDO0804",
       cv: "",
     },
-    description: "",
+    description:
+      "Julien grand beau musclé gentil chouchou des nanas. Actuellement en formation developpement web pour faire quelque chose de ma vie",
   },
   {
     name: {
       first: "Lesage",
       last: "Emeric",
     },
-    picture: "server/public/assets/images/imgProEmericL.jpeg",
+    picture: "/public/images/imgProEmericL.jpeg",
     link: {
       linkedin: "https://www.linkedin.com/in/emericlesage/",
       github: "https://github.com/lesage-emeric",
@@ -59,7 +60,7 @@ const developperCrew: developperCrewProps[] = [
       first: "Priez",
       last: "Mathieu",
     },
-    picture: "",
+    picture: "/public/images/imgProMathieuP.png",
     link: {
       linkedin: "https://www.linkedin.com/in/mathieu-priez-39834928/",
       github: "https://github.com/Supremebatmat",
