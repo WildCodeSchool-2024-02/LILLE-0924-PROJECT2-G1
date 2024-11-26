@@ -31,35 +31,40 @@ function Article() {
   }
 
   return (
-    <div>
+    <>
       {restaurant && (
         <div className="all-content">
           <h1>{restaurant.name}</h1>
 
-          <div
-           className="container-image"
-            key={`${restaurant.name}-description`}
-          >
-            <p>{restaurant.description}</p>
-          </div>
           <div className="container-image" key={`container-${restaurant.name}`}>
             <img
-            className="img-right" 
+              className="img-left"
               src={restaurant.pictures.restaurant}
               alt=""
             />
             <img className="img-right" src={restaurant.pictures.dish} alt="" />
           </div>
+          <p className="description">{restaurant.description}</p>
           <div className="all-buttons" key={`${restaurant.name}-allButtons`}>
             <ButtonVisited />
             <div className="favorite">
               <FavoriteArticle />
             </div>
-          <div className={isActive ? "popup-form active" : "popup-form"}>
-            <Reservation
-              onClickCancel={handleClickPopupFormCancel}
-              onClickValidate={handleClickPopupFormValidate}
-            />
+            <div>
+              <button
+                type="button"
+                className="reservation-button"
+                onClick={handleClickPopupFormValidate}
+              >
+                Reserver
+              </button>
+            </div>
+            <div className={isActive ? "popup-form active" : "popup-form"}>
+              <Reservation
+                onClickCancel={handleClickPopupFormCancel}
+                onClickValidate={handleClickPopupFormValidate}
+              />
+            </div>
           </div>
           <section className="restaurant-history">
             <h3>{restaurant.history.title}</h3>
@@ -69,16 +74,14 @@ function Article() {
           <section className="reviews" key={`${restaurant.name}-reviews`}>
             <h1>Avis google</h1>
             {restaurant.reviews.map((review) => (
-              <>
-                <p key={`${review.reviewer}-${restaurant.id}`}>
-                  Écrit par : <strong>{review.reviewer} </strong>le
+              <div key={review.reviewer}>
+                <p>
+                  Écrit par : <strong>{review.reviewer}</strong> le{" "}
                   {review.date}
                 </p>
-                <p key={`${review.date}-${restaurant.id}`}>{review.comment}</p>
-                <p key={`${review.rating}-${restaurant.id}`}>
-                  Je donne une note de : {review.rating}/5
-                </p>
-              </>
+                <p>{review.comment}</p>
+                <p>Je donne une note de : {review.rating}/5</p>
+              </div>
             ))}
           </section>
           <section className="google-map" key={`${restaurant.name}-map`}>
@@ -90,7 +93,7 @@ function Article() {
           </section>
         </div>
       )}
-    </div>
+    </>
   );
 }
 export default Article;
