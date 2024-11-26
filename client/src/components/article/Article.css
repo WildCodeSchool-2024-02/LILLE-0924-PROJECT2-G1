@@ -14,6 +14,8 @@
   justify-content: center;
   gap: 10px;
   width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .img-left {
   height: 65vh;
@@ -23,13 +25,6 @@
 .img-right {
   height: 65vh;
   width: 30vw;
-  gap: 5px;
-  width: 80%;
-}
-
-.img-dish {
-  width: 40%;
-
 }
 
 .info-restaurant {
@@ -39,8 +34,6 @@
 }
 
 .restaurant-history {
-  display: flex;
-  flex-wrap: wrap;
   width: 80%;
   justify-content: center;
 }
@@ -65,6 +58,7 @@
 }
 
 .favorite {
+  align-content: center;
   background-color: #dacda8;
   border: none;
   color: #0f0f0f;
@@ -81,7 +75,7 @@
 .favorite:hover {
   transform: scale(1.2);
 }
-.reservation {
+.reservation-button {
   background-color: #dacda8;
   border: none;
   color: #0f0f0f;
@@ -93,10 +87,11 @@
   margin: 4px 2px;
   cursor: pointer;
   width: 15rem;
+  height: 3rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.reservation:hover {
+.reservation-button:hover {
   transform: scale(1.2);
 }
 
@@ -110,12 +105,10 @@
   margin-top: 50px;
 }
 
-
 .reviews h1 {
   font-size: 2em;
   text-align: center;
 }
-
 
 .rewiewNameDate {
   border-top: solid gray 1px;
@@ -126,7 +119,10 @@
   padding: 0;
 }
 
-
+h1,
+h3 {
+  text-align: center;
+}
 
 .google-map img {
   width: 100%;
@@ -136,39 +132,6 @@
 .googleMap img {
   width: 60%;
   margin-left: 20%;
-}
-
-@media screen and (max-width: 700px) {
-  .container-image {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .img-left {
-    height: 40vh;
-    width: 46%;
-  }
-  .img-right {
-    height: 40vh;
-    width: 46%;
-  }
-  .reviews {
-    width: 90%;
-  }
-  p {
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 1.5em;
-    text-align: center;
- }
-
-
-.reservation-button {
-  cursor: pointer;
 }
 
 .popup-form {
@@ -187,6 +150,45 @@
 
 .popup-form.active {
   visibility: visible;
+  z-index: 1;
   top: 150vh;
   transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 700px) {
+  .container-image {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .img-left {
+    height: 40vh;
+    width: 46%;
+  }
+
+  .img-right {
+    height: 40vh;
+    width: 46%;
+  }
+
+  .all-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .reviews {
+    width: 90%;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
