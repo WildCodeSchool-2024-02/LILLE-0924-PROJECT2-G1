@@ -1,3 +1,4 @@
+import "./AboutUs.css";
 interface developperCrewProps {
   name: {
     first: string;
@@ -72,16 +73,32 @@ const developperCrew: developperCrewProps[] = [
 
 function AboutUs() {
   return (
-    <>
-      <img src={developperCrew[0].picture} alt={developperCrew[0].name.last} />
-      <h1>
-        {developperCrew[0].name.last} {developperCrew[0].name.first}
-      </h1>
-      <p>Little description of the developper</p>
-      <a href={developperCrew[0].link.linkedin}>LinkedIn</a>
-      <a href={developperCrew[0].link.github}>Github</a>
-      <a href={developperCrew[0].link.cv}>CV</a>
-    </>
+    <div className="crew">
+      {developperCrew.map((dev) => (
+        <div className="dev" key={dev.name.first}>
+          <img
+            src={dev.picture}
+            alt={dev.name.last}
+            key={`${dev.name.first}-img`}
+          />
+          <h1 key={`${dev.name.last}`}>
+            {dev.name.first} {dev.name.last}
+          </h1>
+          <p key={`${dev.description}-Github`}>{dev.description}</p>
+          <div className="links">
+            <a href={dev.link.linkedin} key={`${dev.name.first}-linkedin`}>
+              LinkedIn
+            </a>
+            <a href={dev.link.github} key={`${dev.name.first}-Github`}>
+              Github
+            </a>
+            <a href={dev.link.cv} key={`${dev.name.first}-Github`}>
+              CV
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
