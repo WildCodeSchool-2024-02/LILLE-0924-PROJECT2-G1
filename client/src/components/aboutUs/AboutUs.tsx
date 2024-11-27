@@ -40,7 +40,7 @@ const developperCrew: developperCrewProps[] = [
       cv: "",
     },
     description:
-      "Julien grand beau musclé gentil chouchou des nanas. Actuellement en formation developpement web pour faire quelque chose de ma vie",
+      "Julien trop beau, grand, musclé, gentil. Actuellement en formation developpement web pour faire quelque chose de ma vie",
   },
   {
     name: {
@@ -67,7 +67,8 @@ const developperCrew: developperCrewProps[] = [
       github: "https://github.com/Supremebatmat",
       cv: "",
     },
-    description: "",
+    description:
+      "Ancien Conseiller Clientèle en banque. Aujourd'hui, je me lance dans le monde du développement web à la Wild Code School",
   },
 ];
 
@@ -87,13 +88,13 @@ function AboutUs() {
           <p key={`${dev.description}-Github`}>{dev.description}</p>
           <div className="links">
             <a href={dev.link.linkedin} key={`${dev.name.first}-linkedin`}>
-              LinkedIn
+              <img src="/public/images/linkedin.png" alt="linkedin" />
             </a>
             <a href={dev.link.github} key={`${dev.name.first}-Github`}>
-              Github
+              <img src="/public/images/github-logo.png" alt="github" />
             </a>
             <a href={dev.link.cv} key={`${dev.name.first}-Github`}>
-              CV
+              <img src="/public/images/cv (1).png" alt="CV" />
             </a>
           </div>
         </div>
