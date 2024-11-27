@@ -6,6 +6,7 @@ import Searchbar from "../components/searchbar/SearchBar";
 import type { restaurantProps } from "../types/RestaurantType";
 import Carrousel from "../components/carrousel/Carrousel";
 import "./Home.css";
+import CarrouselSecond from "../components/carrouselSecond/CarrouselSecond";
 
 function Home() {
   // usestate
@@ -56,6 +57,7 @@ function Home() {
         />
       </div>
         <Carrousel />
+        <CarrouselSecond />
       <CardRestaurants
         restaurantsList={
           !!search || !!selectedCuisine

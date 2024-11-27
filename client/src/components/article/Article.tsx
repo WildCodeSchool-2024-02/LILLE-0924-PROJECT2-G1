@@ -92,8 +92,10 @@ function Article() {
             />
           </section>
         </div>
+      </div>
       )}
     </>
   );
 }
+
 export default Article;
