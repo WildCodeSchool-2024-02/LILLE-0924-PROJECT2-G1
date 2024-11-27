@@ -68,11 +68,17 @@ function Article() {
           </div>
           <section className="restaurant-history">
             <h3>{restaurant.history.title}</h3>
-            <h4>{restaurant.history.details}</h4>
+            <p>{restaurant.history.details}</p>
             <p>{restaurant.history.highlights}</p>
           </section>
           <section className="reviews" key={`${restaurant.name}-reviews`}>
-            <h1>Avis google</h1>
+            <h1 className="top-logo-google">
+              <img
+                className="logo-reviews-google"
+                src="../public/images/avis-google.png"
+                alt="google"
+              />
+            </h1>
             {restaurant.reviews.map((review) => (
               <div key={review.reviewer}>
                 <p>
