@@ -1,4 +1,4 @@
-.buttonVisited {
+.button-visited {
   background-color: #dacda8;
   border: none;
   color: #0f0f0f;
@@ -13,6 +13,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.buttonVisited:hover {
+.button-visited:hover {
   transform: scale(1.2);
 }
