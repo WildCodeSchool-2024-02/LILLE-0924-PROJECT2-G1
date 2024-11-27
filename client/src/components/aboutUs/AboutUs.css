@@ -37,4 +37,9 @@ p {
     flex-direction: column;
     align-content: center;
   }
+  .dev img {
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 50%;
+  }
 }
