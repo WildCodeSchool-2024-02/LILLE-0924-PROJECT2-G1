@@ -48,6 +48,10 @@ h1 {
     align-items: center;
     width: calc(100%);
   }
+  h1 {
+    font-size: 1em;
+    margin-left: 45px;
+  }
   .logo {
     margin: 0;
     height: 10vh;
