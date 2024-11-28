@@ -11,9 +11,13 @@
   width: 100%;
   height: 100px;
 }
+.navbar-container a {
+  width: 12%;
+  height: 95%;
+}
 
 .logo {
-  height: auto;
+  height: 100%;
   margin-left: 2vh;
   margin-bottom: 1vh;
   border: 1px solid var(--primary-color);
