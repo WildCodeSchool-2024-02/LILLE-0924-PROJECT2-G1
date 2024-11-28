@@ -36,9 +36,10 @@
   justify-content: center;
 }
 
-.restaurant-history {
+.restaurant-history p {
   width: 80%;
   justify-content: center;
+  justify-self: center;
 }
 
 .all-buttons {
@@ -100,7 +101,7 @@
 }
 h3,
 p {
-  text-align: justify;
+  text-align: center;
 }
 
 .reviews {

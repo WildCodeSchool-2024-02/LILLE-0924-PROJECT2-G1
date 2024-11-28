@@ -13,3 +13,7 @@
 .end-buttons {
   margin-bottom: 20px;
 }
+
+.reservation-form input {
+  width: 35%;
+}

@@ -90,13 +90,6 @@ function Article() {
 							</div>
 						))}
 					</section>
-					<section className="google-map" key={`${restaurant.name}-map`}>
-						<h1>Google map</h1>
-						<img
-							src="https://img.freepik.com/vecteurs-libre/application-localisation-suivi-coronavirus-concept_23-2148659370.jpg?ga=GA1.1.1387876668.1730892268&semt=ais_hybrid"
-							alt="googlemap"
-						/>
-					</section>
 				</div>
 			)}
 		</>
