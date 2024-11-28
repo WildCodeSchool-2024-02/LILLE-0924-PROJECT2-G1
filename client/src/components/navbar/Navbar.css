@@ -3,24 +3,58 @@
   --secondary-color: #b5b682;
 }
 
-nav {
-  background: var(--primary-color);
+.navbar-container {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-bottom: 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-nav .logo {
-  width: 15%;
-}
-
-.searchBar {
-  text-align: center;
-  margin-bottom: 3%;
+  justify-content: space-between;
   width: 100%;
 }
 
-.categoryBar {
-  background: var(--primary-color);
-  border-style: none;
-  font-size: large;
+.logo {
+  height: 20vh;
+  margin-left: 1vh;
+  margin-top: 2%;
+  margin-right: 1vh;
+  margin-bottom: 2vh;
+  border: 1px solid var(--primary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.connexion {
+  height: 15vh;
+  width: 18vh;
+  margin-right: 2vh;
+  margin-top: 5vh;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.connexion:hover {
+  transform: scale(1.2);
+}
+h1 {
+  font-size: 2.5em;
+  margin-top: 8vh;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100%);
+  }
+  .logo {
+    margin: 0;
+    height: 15vh;
+    width: 18vh;
+  }
+  .connexion {
+    margin: 0;
+    height: 10vh;
+    width: 10vh;
+  }
 }

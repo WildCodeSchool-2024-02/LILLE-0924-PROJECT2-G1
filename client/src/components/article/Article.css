@@ -1,53 +1,247 @@
-.review {
-  padding: 10%;
-  width: 30%;
-  text-align: center;
-  justify-self: center;
-}
-.googleMap {
-  padding: 0;
-  width: 30%;
-  text-align: center;
-  justify-self: center;
-}
-.containerImage {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  width: 80%;
-  margin-left: 10%;
-}
-.imgRestaurant {
-  width: 40%;
-}
-.imgDish {
-  width: 40%;
-}
-.infoRestaurant {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.allButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.reviews {
-  width: 80%;
-  padding: 10px;
-}
-.reviews h1 {
-  font-size: 2em;
-}
-.rewiewNameDate {
-  border-top: solid gray 1px;
+.all-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 0;
+  align-items: center;
+}
+
+.google-map {
   padding: 0;
+  width: 30%;
+  align-self: center;
+}
+.container-image {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.img-left {
+  height: 65vh;
+  width: 30vw;
+}
+
+.img-right {
+  height: 65vh;
+  width: 30vw;
+}
+
+.decription {
+  text-align: justify;
+}
+.info-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.restaurant-history {
+  width: 80%;
+  justify-content: center;
+}
+
+.all-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.visited {
+  background-color: #dacda8;
+  border: none;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-align: center;
+  text-size-adjust: 60%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 10rem;
+  height: 2em;
+}
+
+.favorite {
+  align-content: center;
+  background-color: #dacda8;
+  border: none;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-align: center;
+  text-size-adjust: 60%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.favorite:hover {
+  transform: scale(1.2);
+}
+.reservation-button {
+  background-color: #dacda8;
+  border: none;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-align: center;
+  text-size-adjust: 60%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 15rem;
+  height: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservation-button:hover {
+  transform: scale(1.2);
+}
+h3,
+p {
+  text-align: justify;
+}
+
+.reviews {
+  align-self: center;
+  width: 80%;
+  padding: 10px;
+  background-color: lightgray;
+  opacity: 0.8;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.reviews h1 {
+  font-size: 2em;
+  text-align: center;
+}
+.logo-reviews-google {
+  height: 7rem;
+  width: 12rem;
+  background-color: lightgrey;
+  margin-top: 10px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.google-map img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
 }
 .googleMap img {
-  width: 100%;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.popup-form {
+  width: 50%;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  color: black;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.popup-form.active {
+  visibility: visible;
+  z-index: 1;
+  top: 150vh;
+  transform: translate(-50%, -50%) scale(1);
+  background: #dacda8;
+}
+
+@media screen and (max-width: 700px) {
+  .container-image {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .img-left {
+    height: 35vh;
+    width: 46%;
+  }
+
+  .img-right {
+    height: 35vh;
+    width: 46%;
+  }
+
+  .all-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .button-visited {
+    width: 90%;
+    height: 10em;
+  }
+
+  .reviews {
+    width: 90%;
+  }
+
+  .description {
+    text-align: justify;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .all-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+  .button {
+    width: 80%;
+  }
+  .button-visited {
+    width: 100%;
+    height: 2.5em;
+  }
+
+  .reservation-button {
+    width: 100%;
+    height: 2.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .reservation-button:hover {
+    transform: scale(1.2);
+  }
+  .favorite {
+    width: 100%;
+    height: 2.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .favorite:hover {
+    transform: scale(1.2);
+  }
+  .google-map {
+    width: 90%;
+  }
 }

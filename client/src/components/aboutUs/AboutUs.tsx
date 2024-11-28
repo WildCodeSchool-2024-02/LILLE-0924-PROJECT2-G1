@@ -16,8 +16,8 @@ interface developperCrewProps {
 const developperCrew: developperCrewProps[] = [
   {
     name: {
-      first: "Foubert",
-      last: "Antoine",
+      first: "Antoine",
+      last: "Foubert",
     },
     picture: "/public/images/imgProAntoineF.png",
     link: {
@@ -30,8 +30,8 @@ const developperCrew: developperCrewProps[] = [
   },
   {
     name: {
-      first: "Ido",
-      last: "Julien",
+      first: "Julien",
+      last: "Ido",
     },
     picture: "/public/images/imgProJulienI.png",
     link: {
@@ -44,8 +44,8 @@ const developperCrew: developperCrewProps[] = [
   },
   {
     name: {
-      first: "Lesage",
-      last: "Emeric",
+      first: "Emeric",
+      last: "Lesage",
     },
     picture: "/public/images/imgProEmericL.jpeg",
     link: {
@@ -58,8 +58,8 @@ const developperCrew: developperCrewProps[] = [
   },
   {
     name: {
-      first: "Priez",
-      last: "Mathieu",
+      first: "Mathieu",
+      last: "Priez",
     },
     picture: "/public/images/imgProMathieuP.png",
     link: {
@@ -101,6 +101,5 @@ function AboutUs() {
       ))}
     </div>
   );
-}
 
 export default AboutUs;

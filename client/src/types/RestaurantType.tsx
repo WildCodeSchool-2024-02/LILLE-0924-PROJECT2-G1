@@ -15,6 +15,11 @@ export interface restaurantProps {
     saturday?: string | undefined;
     sunday?: string | undefined;
   };
+  history: {
+    title: string;
+    details: string;
+    highlights: string;
+  };
   location?:
     | {
         latitude?: number;
@@ -31,5 +36,5 @@ export interface restaurantProps {
     rating: number;
     comment: string;
     date: string;
-  };
+  }[];
 }

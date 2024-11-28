@@ -1,0 +1,15 @@
+.reservation-form {
+  background: #dacda8;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.reservation-form h1 {
+  margin: 20px;
+  padding: 20px;
+}
+
+.end-buttons {
+  margin-bottom: 20px;
+}

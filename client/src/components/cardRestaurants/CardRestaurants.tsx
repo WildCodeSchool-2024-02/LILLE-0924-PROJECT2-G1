@@ -1,4 +1,5 @@
 import "./CardRestaurants.css";
+import { Link } from "react-router-dom";
 import type { restaurantProps } from "../../types/RestaurantType";
 import FavoriteCard from "../favoriteCard/FavoriteCard";
 
@@ -8,19 +9,32 @@ function CardRestaurants({
   restaurantsList: restaurantProps[] | undefined;
 }) {
   return (
-    <div className="containerRestaurants">
+    <div className="container-restaurants">
       {restaurantsList?.map((element) => (
-        <div key={element.id} className="restaurant-container">
-          <img
-            src={element.pictures.card}
-            alt={element.name}
-            className="imgRestaurant"
-          />
-          <h1>{element.name}</h1>
-          <p> cuisine:{element.cuisine}</p>
-          <FavoriteCard />
-          <p>Note : {element.rating}/5</p>
-        </div>
+        <Link
+          to={`/article/${element.id}`}
+          key={`url-${element.name}`}
+          className="link-card"
+        >
+          <div key={element.id} className="restaurant-card">
+            <div className="card-img-favorite">
+              <img
+                src={element.pictures.card}
+                alt={element.name}
+                className="img-restaurant"
+              />
+              <FavoriteCard />
+            </div>
+            <div className="card-text">
+              <h1>{element.name}</h1>
+              <div className="cuisine-container">
+                <p> Cuisine : {element.cuisine}</p>
+                <br />
+                <p>Note : {element.rating}/5</p>
+              </div>
+            </div>
+          </div>
+        </Link>
       ))}
     </div>
   );
