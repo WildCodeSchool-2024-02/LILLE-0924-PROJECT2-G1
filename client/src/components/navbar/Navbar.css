@@ -6,7 +6,6 @@
 .navbar-container {
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  /* margin-bottom: 0; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -48,7 +47,6 @@ h1 {
   .logo {
     margin: 0;
     height: 10vh;
-
   }
   .connexion {
     margin: 0;
