@@ -72,7 +72,7 @@ function Reservation({ onClickCancel, onClickValidate }: FunctionProps) {
           required
         />
       </p>
-      <div>
+      <div className="end-buttons">
         <button type="button" onClick={onClickCancel}>
           Confirmer
         </button>
