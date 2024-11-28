@@ -1,0 +1,55 @@
+.crew {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.dev img {
+  width: 30%;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  width: 20%;
+}
+
+p {
+  width: 70%;
+  justify-self: center;
+}
+
+.dev p {
+  margin: 10px;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .crew {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .dev img {
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 50%;
+  }
+}

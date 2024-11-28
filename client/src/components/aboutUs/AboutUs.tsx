@@ -1,3 +1,4 @@
+import "./AboutUs.css";
 interface developperCrewProps {
   name: {
     first: string;
@@ -18,7 +19,7 @@ const developperCrew: developperCrewProps[] = [
       first: "Antoine",
       last: "Foubert",
     },
-    picture: "server/public/assets/images/imgProAntoineF.jpeg",
+    picture: "/public/images/imgProAntoineF.png",
     link: {
       linkedin: "https://www.linkedin.com/in/antoine-foubert-152ba413b/",
       github: "https://github.com/foub404",
@@ -32,20 +33,21 @@ const developperCrew: developperCrewProps[] = [
       first: "Julien",
       last: "Ido",
     },
-    picture: "",
+    picture: "/public/images/imgProJulienI.png",
     link: {
       linkedin: "https://www.linkedin.com/in/julien-ido-33bb69335/",
       github: "https://github.com/JuIDO0804",
       cv: "",
     },
-    description: "",
+    description:
+      "Julien trop beau, grand, musclé, gentil. Actuellement en formation developpement web pour faire quelque chose de ma vie",
   },
   {
     name: {
       first: "Emeric",
       last: "Lesage",
     },
-    picture: "server/public/assets/images/imgProEmericL.jpeg",
+    picture: "/public/images/imgProEmericL.jpeg",
     link: {
       linkedin: "https://www.linkedin.com/in/emericlesage/",
       github: "https://github.com/lesage-emeric",
@@ -59,39 +61,45 @@ const developperCrew: developperCrewProps[] = [
       first: "Mathieu",
       last: "Priez",
     },
-    picture: "",
+    picture: "/public/images/imgProMathieuP.png",
     link: {
       linkedin: "https://www.linkedin.com/in/mathieu-priez-39834928/",
       github: "https://github.com/Supremebatmat",
       cv: "",
     },
-    description: "",
+    description:
+      "Ancien Conseiller Clientèle en banque. Aujourd'hui, je me lance dans le monde du développement web à la Wild Code School",
   },
 ];
 
 function AboutUs() {
-  return developperCrew.map((dev) => (
-    <>
-      <img
-        src={dev.picture}
-        alt={dev.name.last}
-        key={`${dev.name.first}-img`}
-      />
-      <h1 key={`${dev.name.last}`}>
-        {dev.name.first} {dev.name.last}
-      </h1>
-      <p key={`${dev.description}-Github`}>{dev.description}</p>
-      <a href={dev.link.linkedin} key={`${dev.name.first}-linkedin`}>
-        LinkedIn
-      </a>
-      <a href={dev.link.github} key={`${dev.name.first}-Github`}>
-        Github
-      </a>
-      <a href={dev.link.cv} key={`${dev.name.first}-Github`}>
-        CV
-      </a>
-    </>
-  ));
-}
+  return (
+    <div className="crew">
+      {developperCrew.map((dev) => (
+        <div className="dev" key={dev.name.first}>
+          <img
+            src={dev.picture}
+            alt={dev.name.last}
+            key={`${dev.name.first}-img`}
+          />
+          <h1 key={`${dev.name.last}`}>
+            {dev.name.first} {dev.name.last}
+          </h1>
+          <p key={`${dev.description}-Github`}>{dev.description}</p>
+          <div className="links">
+            <a href={dev.link.linkedin} key={`${dev.name.first}-linkedin`}>
+              <img src="/public/images/linkedin.png" alt="linkedin" />
+            </a>
+            <a href={dev.link.github} key={`${dev.name.first}-Github`}>
+              <img src="/public/images/github-logo.png" alt="github" />
+            </a>
+            <a href={dev.link.cv} key={`${dev.name.first}-Github`}>
+              <img src="/public/images/cv (1).png" alt="CV" />
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 
 export default AboutUs;
