@@ -5,7 +5,11 @@
 }
 
 .dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
+  margin-bottom: 20px;
 }
 
 .dev img {
@@ -29,6 +33,12 @@ a {
 p {
   width: 70%;
   justify-self: center;
+}
+
+.dev p {
+  margin: 10px;
+  text-align: justify;
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
