@@ -5,11 +5,11 @@ function Footer() {
   return (
     <>
       <footer>
-        <p>&copy;</p>
+        <p className="copyright">&copy;</p>
         <Link to="/about" className="about">
           About
         </Link>
-        <p>🍽️</p>
+        <p className="emoji">🍽️</p>
       </footer>
     </>
   );
