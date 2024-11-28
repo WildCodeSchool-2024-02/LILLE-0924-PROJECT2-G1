@@ -16,7 +16,7 @@ function Reservation({ onClickCancel, onClickValidate }: FunctionProps) {
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="Antoine Fouvert"
+          placeholder="Antoine Foubert"
           required
         />
       </p>
@@ -28,7 +28,7 @@ function Reservation({ onClickCancel, onClickValidate }: FunctionProps) {
           type="email"
           name="searchBar"
           id="searchBar"
-          placeholder="AntoineFouvert@toto.gmail.com"
+          placeholder="AntoineFoubert@toto.com"
         />
       </p>
 
@@ -39,7 +39,7 @@ function Reservation({ onClickCancel, onClickValidate }: FunctionProps) {
           type="text"
           name="searchBar"
           id="searchBar"
-          placeholder="123456789"
+          placeholder="+33 . .. .. .. .."
           required
         />
       </p>
