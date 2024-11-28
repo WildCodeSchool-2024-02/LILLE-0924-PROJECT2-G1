@@ -8,92 +8,92 @@ import type { restaurantProps } from "../../types/RestaurantType";
 import Reservation from "../reservation/Reservation";
 
 function Article() {
-	const { id } = useParams();
+  const { id } = useParams();
 
-	const [restaurant, setRestaurant] = useState<restaurantProps>();
-	const [isActive, setIsActive] = useState(false);
+  const [restaurant, setRestaurant] = useState<restaurantProps>();
+  const [isActive, setIsActive] = useState(false);
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-	useEffect(() => {
-		fetch(`http://localhost:3310/restaurant/${id}`)
-			.then((response) => response.json())
-			.then((restaurantFromApi) => {
-				return setRestaurant(restaurantFromApi);
-			})
-			.catch((err) => console.error(err));
-	}, []);
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
+    fetch(`http://localhost:3310/restaurant/${id}`)
+      .then((response) => response.json())
+      .then((restaurantFromApi) => {
+        return setRestaurant(restaurantFromApi);
+      })
+      .catch((err) => console.error(err));
+  }, []);
 
-	function handleClickPopupFormCancel() {
-		setIsActive(!isActive);
-	}
-	function handleClickPopupFormValidate() {
-		setIsActive(!isActive);
-	}
+  function handleClickPopupFormCancel() {
+    setIsActive(!isActive);
+  }
+  function handleClickPopupFormValidate() {
+    setIsActive(!isActive);
+  }
 
-	return (
-		<>
-			{restaurant && (
-				<div className="all-content">
-					<h1>{restaurant.name}</h1>
+  return (
+    <>
+      {restaurant && (
+        <div className="all-content">
+          <h1>{restaurant.name}</h1>
 
-					<div className="container-image" key={`container-${restaurant.name}`}>
-						<img
-							className="img-left"
-							src={restaurant.pictures.restaurant}
-							alt=""
-						/>
-						<img className="img-right" src={restaurant.pictures.dish} alt="" />
-					</div>
-					<p className="description">{restaurant.description}</p>
-					<div className="all-buttons" key={`${restaurant.name}-allButtons`}>
-						<ButtonVisited />
-						<div className="favorite">
-							<FavoriteArticle />
-						</div>
-						<div>
-							<button
-								type="button"
-								className="reservation-button"
-								onClick={handleClickPopupFormValidate}
-							>
-								Reserver
-							</button>
-						</div>
-						<div className={isActive ? "popup-form active" : "popup-form"}>
-							<Reservation
-								onClickCancel={handleClickPopupFormCancel}
-								onClickValidate={handleClickPopupFormValidate}
-							/>
-						</div>
-					</div>
-					<section className="restaurant-history">
-						<h3>{restaurant.history.title}</h3>
-						<p>{restaurant.history.details}</p>
-						<p>{restaurant.history.highlights}</p>
-					</section>
-					<section className="reviews" key={`${restaurant.name}-reviews`}>
-						<h1 className="top-logo-google">
-							<img
-								className="logo-reviews-google"
-								src="../public/images/avis-google.png"
-								alt="google"
-							/>
-						</h1>
-						{restaurant.reviews.map((review) => (
-							<div key={review.reviewer}>
-								<p>
-									Écrit par : <strong>{review.reviewer}</strong> le{" "}
-									{review.date}
-								</p>
-								<p>{review.comment}</p>
-								<p>Je donne une note de : {review.rating}/5</p>
-							</div>
-						))}
-					</section>
-				</div>
-			)}
-		</>
-	);
+          <div className="container-image" key={`container-${restaurant.name}`}>
+            <img
+              className="img-left"
+              src={restaurant.pictures.restaurant}
+              alt=""
+            />
+            <img className="img-right" src={restaurant.pictures.dish} alt="" />
+          </div>
+          <p className="description">{restaurant.description}</p>
+          <div className="all-buttons" key={`${restaurant.name}-allButtons`}>
+            <ButtonVisited />
+            <div className="favorite">
+              <FavoriteArticle />
+            </div>
+            <div>
+              <button
+                type="button"
+                className="reservation-button"
+                onClick={handleClickPopupFormValidate}
+              >
+                Reserver
+              </button>
+            </div>
+            <div className={isActive ? "popup-form active" : "popup-form"}>
+              <Reservation
+                onClickCancel={handleClickPopupFormCancel}
+                onClickValidate={handleClickPopupFormValidate}
+              />
+            </div>
+          </div>
+          <section className="restaurant-history">
+            <h3>{restaurant.history.title}</h3>
+            <p>{restaurant.history.details}</p>
+            <p>{restaurant.history.highlights}</p>
+          </section>
+          <section className="reviews" key={`${restaurant.name}-reviews`}>
+            <h1 className="top-logo-google">
+              <img
+                className="logo-reviews-google"
+                src="../public/images/avis-google.png"
+                alt="google"
+              />
+            </h1>
+            {restaurant.reviews.map((review) => (
+              <div key={review.reviewer}>
+                <p>
+                  Écrit par : <strong>{review.reviewer}</strong> le{" "}
+                  {review.date}
+                </p>
+                <p>{review.comment}</p>
+                <p>Je donne une note de : {review.rating}/5</p>
+              </div>
+            ))}
+          </section>
+        </div>
+      )}
+    </>
+  );
 }
 
 export default Article;
