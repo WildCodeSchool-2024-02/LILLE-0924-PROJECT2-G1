@@ -7,7 +7,7 @@
   padding: 20px;
   border-top: solid black 2px;
   max-width: 1200px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .restaurant-card {
@@ -72,18 +72,7 @@
 
 @media (max-width: 768px) {
   .container-restaurants {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
+   grid-template-columns: repeat(1, 1fr);
 
-@media (max-width: 1024px) {
-  .container-restaurants {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 1440px) {
-  .container-restaurants {
-    grid-template-columns: repeat(4, 1fr);
   }
 }

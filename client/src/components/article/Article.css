@@ -9,6 +9,7 @@
   width: 30%;
   align-self: center;
 }
+
 .container-image {
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+
 .img-left {
   height: 65vh;
   width: 30vw;
@@ -30,6 +32,7 @@
 .decription {
   text-align: justify;
 }
+
 .info-restaurant {
   display: flex;
   flex-direction: row;
@@ -47,6 +50,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .visited {
   background-color: #dacda8;
   border: none;
@@ -77,9 +81,11 @@
   width: 15rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .favorite:hover {
   transform: scale(1.2);
 }
+
 .reservation-button {
   background-color: #dacda8;
   border: none;
@@ -99,6 +105,7 @@
 .reservation-button:hover {
   transform: scale(1.2);
 }
+
 h3,
 p {
   text-align: center;

@@ -23,14 +23,14 @@
   justify-content: center;
 }
 
-a {
+.crew a {
   text-decoration: none;
   color: black;
   cursor: pointer;
   width: 20%;
 }
 
-p {
+.crew p {
   width: 70%;
   justify-self: center;
 }
@@ -51,5 +51,11 @@ p {
     width: 80%;
     margin-top: 2rem;
     border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dev {
+    width: 90%;
   }
 }

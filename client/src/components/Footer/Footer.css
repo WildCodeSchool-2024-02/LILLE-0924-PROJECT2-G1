@@ -10,3 +10,13 @@ footer {
   text-decoration: none;
   color: black;
 }
+
+.copyright {
+  justify-self: center;
+  align-self: center;
+}
+
+.emoji {
+  justify-self: center;
+  align-self: center;
+}
